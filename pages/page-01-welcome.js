@@ -31,7 +31,7 @@ document.getElementById("page-01").innerHTML = `
       </button>
 
       <button class="btn btn-outline" style="margin-bottom: 40px">
-        <i class="fas fa-envelope" style="margin-right: 8px"></i>使用電子郵件註冊
+        <i class="fab fa-apple" style="margin-right: 8px"></i>使用 Apple 登入
       </button>
 
       <div style="background: #fef3c7; border: 1.5px solid #fbbf24; border-radius: 12px; padding: 16px; margin-bottom: 20px; text-align: left">
