@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
       console.error("FlipTok debug: styles.css not loaded");
     }
     const ids = Array.from(
-      { length: 15 },
+      { length: 17 },
       (_, i) => `page-${String(i + 1).padStart(2, "0")}`
     );
     const missing = ids.filter((id) => {

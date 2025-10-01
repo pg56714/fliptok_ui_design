@@ -1,5 +1,5 @@
-// 頁面 15: 品牌中心頁面
-document.getElementById("page-15").innerHTML = `
+// 頁面 17: 品牌中心頁面
+document.getElementById("page-17").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>
