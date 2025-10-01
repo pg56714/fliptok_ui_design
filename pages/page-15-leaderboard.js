@@ -1,5 +1,5 @@
-// 頁面 13: 排行榜頁面
-document.getElementById("page-13").innerHTML = `
+// 頁面 15: 排行榜頁面
+document.getElementById("page-15").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>

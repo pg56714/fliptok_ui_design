@@ -85,7 +85,7 @@
     <div class="page-content">
       <div class="header-bar">
         <div class="header-title">品牌一覽</div>
-        <div class="header-subtitle">自動生成品牌頁佔位</div>
+        <div class="header-subtitle">品牌清單</div>
       </div>
 
       <div style="padding:16px">
@@ -94,7 +94,7 @@
           <i class="fas fa-search" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #94a3b8"></i>
         </div>
 
-        <div style="font-size: 12px; color:#64748b; margin: 8px 0 12px">「時尚潮牌 A」顯示「進入」，其他品牌顯示「申請」</div>
+        <div style="font-size: 12px; color:#64748b; margin: 8px 0 12px">「已加入」顯示「進入」，其他品牌顯示「申請」</div>
 
         <div style="display:grid; gap:12px">
           ${listHtml}

@@ -76,12 +76,7 @@ document.getElementById("page-09").innerHTML = `
             </div>
             <div style="font-size: 12px; font-weight: 700; color: #334155">購物</div>
           </div>
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(13)">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #e0f2fe; color: #0284c7">
-              <i class="fas fa-trophy"></i>
-            </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">排行榜</div>
-          </div>
+          
           <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(14)">
             <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #f3e8ff; color: #8b5cf6">
               <i class="fas fa-user-friends"></i>

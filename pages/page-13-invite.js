@@ -1,5 +1,5 @@
-// 頁面 14: 邀請好友頁面
-document.getElementById("page-14").innerHTML = `
+// 頁面 13: 邀請好友頁面
+document.getElementById("page-13").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>

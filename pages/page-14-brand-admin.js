@@ -1,5 +1,5 @@
-// 頁面 15: 品牌後台（管理加入/更改/退出）
-document.getElementById("page-15").innerHTML = `
+// 頁面 14: 品牌後台（進入/排行）
+document.getElementById("page-14").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>
@@ -29,9 +29,11 @@ document.getElementById("page-15").innerHTML = `
               <div style="font-size: 15px; font-weight: 700; color:#1e293b; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">時尚潮牌 A</div>
               <div style="font-size: 12px; color:#64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">856 位大使 • 已加入</div>
             </div>
-            <div style="display:flex; gap:8px; justify-content:flex-end">
-              <button class="btn btn-danger" style="padding:6px 12px; font-size:12px" onclick="alert('已退出品牌（示意）')">退出品牌</button>
-              <button class="btn btn-primary" style="padding:6px 12px; font-size:12px" onclick="goToPage(15)">進入品牌</button>
+            <div style="display:flex; gap:8px; justify-content:flex-end; flex-wrap:wrap">
+              <button class="btn" style="padding:6px 12px; font-size:12px" onclick="goToPage(15)">
+                <i class="fas fa-trophy" style="margin-right:6px"></i>品牌排行
+              </button>
+              <button class="btn btn-primary" style="padding:6px 12px; font-size:12px" onclick="goToPage(17)">進入品牌</button>
             </div>
           </div>
         </div>
