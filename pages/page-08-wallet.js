@@ -33,9 +33,6 @@ document.getElementById("page-08").innerHTML = `
           <button style="flex: 1; background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); padding: 12px; border-radius: 12px; font-size: 14px; font-weight: 600">
             <i class="fas fa-download" style="margin-right: 6px"></i>提現
           </button>
-          <button style="flex: 1; background: rgba(255,255,255,0.2); color: white; border: 1px solid rgba(255,255,255,0.3); padding: 12px; border-radius: 12px; font-size: 14px; font-weight: 600">
-            <i class="fas fa-chart-line" style="margin-right: 6px"></i>統計
-          </button>
         </div>
       </div>
 

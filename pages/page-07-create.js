@@ -36,44 +36,7 @@ document.getElementById("page-07").innerHTML = `
         </div>
       </div>
 
-      <!-- 快速創作工具 -->
-      <div style="margin-bottom: 24px">
-        <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 12px">快速創作工具</h3>
-        <div style="display: grid; gap: 12px">
-          <div class="list-item" style="background: white; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="alert('圖片壓縮工具')">
-            <div class="list-icon" style="background: #fef3c7; color: #f59e0b">
-              <i class="fas fa-compress"></i>
-            </div>
-            <div class="list-content">
-              <div class="list-title">圖片壓縮工具</div>
-              <div class="list-subtitle">調整圖片大小和品質</div>
-            </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
-          </div>
-
-          <div class="list-item" style="background: white; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="alert('格式轉換工具')">
-            <div class="list-icon" style="background: #e0f2fe; color: #0284c7">
-              <i class="fas fa-exchange-alt"></i>
-            </div>
-            <div class="list-content">
-              <div class="list-title">格式轉換</div>
-              <div class="list-subtitle">JPG、PNG、WebP 格式轉換</div>
-            </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
-          </div>
-
-          <div class="list-item" style="background: white; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="alert('像素調整工具')">
-            <div class="list-icon" style="background: #f3e8ff; color: #8b5cf6">
-              <i class="fas fa-expand-arrows-alt"></i>
-            </div>
-            <div class="list-content">
-              <div class="list-title">像素尺寸調整</div>
-              <div class="list-subtitle">調整圖片解析度</div>
-            </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
-          </div>
-        </div>
-      </div>
+      
 
       <!-- 我的創作 -->
       <div>

@@ -97,26 +97,23 @@ document.getElementById("page-09").innerHTML = `
         </div>
       </div>
 
-      <!-- 品牌大使資訊 -->
-      <div class="card" style="margin-bottom: 20px">
-        <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">品牌大使</h3>
-        <div style="display: flex; align-items: center; gap: 12px; padding: 16px; background: #f8fafc; border-radius: 12px">
-          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=60&h=60&fit=crop" alt="Brand" style="width: 48px; height: 48px; border-radius: 12px">
-          <div style="flex: 1">
-            <div style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 2px">時尚潮牌 A</div>
-            <div style="font-size: 13px; color: #64748b">大使等級：金牌</div>
-          </div>
-          <div style="text-align: right">
-            <div style="font-size: 14px; font-weight: 700; color: #6366f1">NT$ 2,480</div>
-            <div style="font-size: 12px; color: #64748b">累計收益</div>
-          </div>
-        </div>
-      </div>
+      
 
       <!-- 設定（合併原「帳戶設定」與「其他」） -->
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">設定</h3>
         <div style="display: grid; gap: 12px">
+          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0;">
+            <div class="list-icon" style="background: #fef3c7; color: #f59e0b">
+              <i class="fas fa-bell"></i>
+            </div>
+            <div class="list-content">
+              <div class="list-title">粉絲影響購買通知</div>
+              <div class="list-subtitle">當粉絲影響購買時，系統會悄悄通知大使。</div>
+            </div>
+            <input type="checkbox" aria-label="粉絲影響購買通知切換" checked onchange="console.log('粉絲影響購買通知', this.checked)" style="width: 18px; height: 18px; accent-color: #6366f1; cursor: pointer">
+          </div>
+
           <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="alert('編輯個人資料')">
             <div class="list-icon" style="background: #e0f2fe; color: #0284c7">
               <i class="fas fa-user-edit"></i>
