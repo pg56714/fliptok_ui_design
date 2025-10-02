@@ -9,5 +9,5 @@ bunx serve -l 5173
 ## Build
 
 ```
-bunx vite build
+bun run build
 ```
