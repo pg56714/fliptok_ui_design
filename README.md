@@ -9,5 +9,7 @@ bunx serve -l 5173
 ## Build
 
 ```
+bun install
 bun run build
+bun run preview
 ```
