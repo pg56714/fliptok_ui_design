@@ -1,4 +1,6 @@
 import { defineConfig } from "vite";
+import { copyFileSync } from "fs";
+import { resolve } from "path";
 
 export default defineConfig({
   root: ".",
@@ -31,4 +33,16 @@ export default defineConfig({
     copyPublicDir: true,
   },
   publicDir: "public",
+  plugins: [
+    {
+      name: "copy-styles",
+      writeBundle() {
+        try {
+          copyFileSync(resolve("styles.css"), resolve("dist", "styles.css"));
+        } catch (error) {
+          console.warn("Failed to copy styles.css:", error);
+        }
+      },
+    },
+  ],
 });
