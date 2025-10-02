@@ -8,6 +8,20 @@
     sans-serif;
 }
 
+/* Reset default list bullets to avoid stray dots beside cards */
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove any stray markers (Firefox/Safari UA styles, libs) */
+:where(*)::marker {
+  content: "";
+}
+
 body {
   background: #f5f7fa;
   min-height: 100vh;
