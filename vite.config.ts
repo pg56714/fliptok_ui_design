@@ -10,6 +10,7 @@ export default defineConfig({
       input: {
         main: "index.html",
         app: "app.js",
+        styles: "styles.css",
         "page-01": "pages/page-01-welcome.js",
         "page-02": "pages/page-02-brand-select.js",
         "page-03": "pages/page-03-interests.js",

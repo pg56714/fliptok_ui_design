@@ -1,8 +1,9 @@
 window.addEventListener("DOMContentLoaded", () => {
   try {
     // 檢查樣式是否載入
-    const hasStyles = Array.from(document.styleSheets).some((s) =>
-      (s.href || "").endsWith("styles.css")
+    const hasStyles = Array.from(document.styleSheets).some(
+      (s) =>
+        (s.href || "").includes("styles") || (s.href || "").includes("main")
     );
     if (!hasStyles) {
       const cssWarn = document.createElement("div");
