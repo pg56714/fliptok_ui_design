@@ -58,7 +58,7 @@ document.getElementById("page-09").innerHTML = `
             <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
               <i class="fas fa-shopping-cart"></i>
             </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">購物</div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155">購物車</div>
           </div>
           <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage('09a')">
             <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #dbeafe; color: #2563eb">
@@ -73,24 +73,79 @@ document.getElementById("page-09").innerHTML = `
             <div style="font-size: 12px; font-weight: 700; color: #334155">邀請好友</div>
           </div>
           
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(10)">
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="document.getElementById('ambassador-modal').style.display='flex'">
             <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
               <i class="fas fa-crown"></i>
             </div>
             <div style="font-size: 12px; font-weight: 700; color: #334155">大使功能</div>
           </div>
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage('10a')">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
-              <i class="fas fa-comments"></i>
+        </div>
+      </div>
+
+      <!-- 大使功能選擇模態框 -->
+      <div id="ambassador-modal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center" onclick="if(event.target === this) this.style.display='none'">
+        <div style="background: white; border-radius: 24px; padding: 32px 24px; margin: 20px; max-width: 360px; width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.3)" onclick="event.stopPropagation()">
+          <!-- 標題 -->
+          <div style="text-align: center; margin-bottom: 24px">
+            <div style="width: 64px; height: 64px; margin: 0 auto 16px; background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center">
+              <i class="fas fa-crown" style="font-size: 32px; color: white"></i>
             </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">品牌聊天</div>
+            <h3 style="font-size: 22px; font-weight: 800; color: #1e293b; margin-bottom: 8px">大使功能</h3>
+            <p style="font-size: 14px; color: #64748b">選擇你要使用的功能</p>
           </div>
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(11)">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #f0fdf4; color: #16a34a">
-              <i class="fas fa-chart-line"></i>
+
+          <!-- 功能選項 -->
+          <div style="display: grid; gap: 12px; margin-bottom: 24px">
+            <div style="display: flex; align-items: center; gap: 16px; padding: 16px; background: #f8fafc; border-radius: 16px; cursor: pointer; transition: all 0.3s" 
+              onmouseover="this.style.background='#f1f5f9'; this.style.transform='translateX(4px)'" 
+              onmouseout="this.style.background='#f8fafc'; this.style.transform='translateX(0)'"
+              onclick="document.getElementById('ambassador-modal').style.display='none'; goToPage(11)">
+              <div style="width: 48px; height: 48px; background: #f0fdf4; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+                <i class="fas fa-chart-line" style="font-size: 20px; color: #16a34a"></i>
+              </div>
+              <div style="flex: 1">
+                <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">數據分析</div>
+                <div style="font-size: 12px; color: #64748b">查看作品表現與收益</div>
+              </div>
+              <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
             </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">數據分析</div>
+
+            <div style="display: flex; align-items: center; gap: 16px; padding: 16px; background: #f8fafc; border-radius: 16px; cursor: pointer; transition: all 0.3s" 
+              onmouseover="this.style.background='#f1f5f9'; this.style.transform='translateX(4px)'" 
+              onmouseout="this.style.background='#f8fafc'; this.style.transform='translateX(0)'"
+              onclick="document.getElementById('ambassador-modal').style.display='none'; goToPage(14)">
+              <div style="width: 48px; height: 48px; background: #eff6ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+                <i class="fas fa-store" style="font-size: 20px; color: #3b82f6"></i>
+              </div>
+              <div style="flex: 1">
+                <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">品牌後台</div>
+                <div style="font-size: 12px; color: #64748b">管理品牌相關設定</div>
+              </div>
+              <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 16px; padding: 16px; background: #f8fafc; border-radius: 16px; cursor: pointer; transition: all 0.3s" 
+              onmouseover="this.style.background='#f1f5f9'; this.style.transform='translateX(4px)'" 
+              onmouseout="this.style.background='#f8fafc'; this.style.transform='translateX(0)'"
+              onclick="document.getElementById('ambassador-modal').style.display='none'; goToPage('10a')">
+              <div style="width: 48px; height: 48px; background: #fef3c7; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+                <i class="fas fa-comments" style="font-size: 20px; color: #f59e0b"></i>
+              </div>
+              <div style="flex: 1">
+                <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">品牌聊天室</div>
+                <div style="font-size: 12px; color: #64748b">與品牌團隊溝通</div>
+              </div>
+              <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
+            </div>
           </div>
+
+          <!-- 取消按鈕 -->
+          <button 
+            style="width: 100%; padding: 14px; background: #f1f5f9; border: none; border-radius: 12px; color: #64748b; font-size: 15px; font-weight: 600; cursor: pointer"
+            onclick="document.getElementById('ambassador-modal').style.display='none'"
+          >
+            取消
+          </button>
         </div>
       </div>
 

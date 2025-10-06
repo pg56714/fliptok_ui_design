@@ -37,19 +37,9 @@ document.getElementById("page-14").innerHTML = `
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="card">
-        <h3 style="font-size: 16px; font-weight: 800; color:#1e293b; margin-bottom: 12px">邀請與申請</h3>
-        <div style="display:grid; gap:12px">
-          <div style="padding:12px; background:#f8fafc; border-radius:12px">
-            <div style="font-size:14px; font-weight:700; color:#1e293b; margin-bottom:4px">待處理邀請</div>
-            <div style="font-size:13px; color:#64748b">目前沒有新的品牌邀請</div>
-          </div>
-          <button class="btn btn-primary" onclick="goToPage(16)">
-            <i class="fas fa-plus" style="margin-right:8px"></i>探索更多品牌並申請
-          </button>
-        </div>
+        <button class="btn btn-primary" onclick="goToPage(16)">
+          <i class="fas fa-plus" style="margin-right:8px"></i>加入更多品牌
+        </button>
       </div>
     </div>
   </div>

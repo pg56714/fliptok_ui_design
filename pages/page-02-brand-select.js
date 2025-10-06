@@ -62,7 +62,7 @@ document.getElementById("page-02").innerHTML = `
         </div>
       </div>
 
-      <button class="btn btn-primary" style="margin-top: 24px" onclick="alert('已選擇品牌，導向付費頁面'); goToPage('02a')">
+      <button class="btn btn-primary" style="margin-top: 24px">
         繼續並解鎖完整功能 <i class="fas fa-arrow-right" style="margin-left: 8px"></i>
       </button>
 

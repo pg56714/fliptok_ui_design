@@ -1,5 +1,5 @@
 // 品牌 02: 品牌儀表板
-document.getElementById("brand-02").innerHTML = `
+document.getElementById("brand-01").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>
@@ -12,8 +12,10 @@ document.getElementById("brand-02").innerHTML = `
 
   <div class="page-content" style="bottom: 0">
     <div style="padding: 20px">
-      <h2 style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px">時尚潮牌 A</h2>
-      <p style="font-size: 14px; color: #64748b; margin-bottom: 24px">品牌管理儀表板</p>
+      <div style="position: relative; margin-bottom: 24px">
+        <h2 style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px">時尚潮牌 A</h2>
+        <p style="font-size: 14px; color: #64748b">品牌管理儀表板</p>
+      </div>
 
       <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 20px; padding: 24px; margin-bottom: 24px; color: white">
         <div style="font-size: 14px; opacity: 0.9; margin-bottom: 8px">本月收益</div>

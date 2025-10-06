@@ -61,7 +61,7 @@ document.getElementById("page-07").innerHTML = `
               <i class="fas fa-images" style="font-size: 24px; color: white"></i>
             </div>
             <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 4px">從相簿選擇</h3>
-            <p style="font-size: 13px; color: #64748b">使用現有的照片或影片</p>
+            <p style="font-size: 13px; color: #64748b">使用現有的照片或影片（限 60 秒）</p>
           </div>
         </div>
 

@@ -12,12 +12,47 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-title">
-      FlipTok - 用戶與大使完整流程（按功能順序排列，共 26 頁）
+    <div
+      class="page-title"
+      style="
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <a
+        href="index.html"
+        style="
+          position: absolute;
+          left: 20px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 10px 20px;
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          text-decoration: none;
+          border-radius: 12px;
+          font-size: 14px;
+          font-weight: 600;
+          transition: all 0.3s;
+          box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        "
+        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(102,126,234,0.4)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(102,126,234,0.3)'"
+      >
+        <i class="fas fa-arrow-left"></i>
+        返回選擇角色
+      </a>
+      <span>FlipTok - 用戶與大使完整流程（共 29 頁）</span>
     </div>
     <!-- 原有 26 頁 -->
     <div id="page-01"></div>
+    <div id="page-01b"></div>
+    <div id="page-01c"></div>
     <div id="page-01a"></div>
+
     <div id="page-02"></div>
     <div id="page-03"></div>
     <div id="page-02a"></div>
@@ -27,26 +62,31 @@
     <div id="page-04a"></div>
     <div id="page-05"></div>
     <div id="page-06"></div>
+    <div id="page-06a"></div>
     <div id="page-07"></div>
     <div id="page-07a"></div>
     <div id="page-08"></div>
     <div id="page-09"></div>
-    <div id="page-10"></div>
-    <div id="page-11"></div>
     <div id="page-12"></div>
+    <div id="page-09a"></div>
     <div id="page-13"></div>
+    <div id="page-11"></div>
     <div id="page-14"></div>
-    <div id="page-15"></div>
     <div id="page-16"></div>
+    <div id="page-15"></div>
     <div id="page-17"></div>
 
-    <div id="page-09a"></div>
-    <div id="page-09b"></div>
+    <div id="page-10"></div>
     <div id="page-10a"></div>
+    <div id="page-09b"></div>
 
     <!-- 1️⃣ 註冊登入流程 -->
     <script type="module" src="pages/page-01-welcome.js"></script>
     <!-- 歡迎頁（登入） -->
+    <script type="module" src="pages/page-01b-register.js"></script>
+    <!-- 註冊頁面 -->
+    <script type="module" src="pages/page-01c-forgot-password.js"></script>
+    <!-- 忘記密碼 -->
     <script type="module" src="pages/page-01a-welcome-video.js"></script>
     <!-- 迎賓影片 -->
 
@@ -73,6 +113,8 @@
     <!-- 購物頁面 -->
     <script type="module" src="pages/page-06-explore.js"></script>
     <!-- 探索頁 -->
+    <script type="module" src="pages/page-06a-require-ambassador.js"></script>
+    <!-- 需要大使身份 -->
 
     <!-- 5️⃣ 大使升級 -->
     <script type="module" src="pages/page-10b-upgrade-ambassador.js"></script>

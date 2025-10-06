@@ -14,9 +14,22 @@ window.addEventListener("DOMContentLoaded", () => {
       document.body.appendChild(cssWarn);
       console.error("FlipTok debug: styles.css not loaded");
     }
+
+    // 檢測當前是哪個系統（用戶端、品牌端或管理端）
+    let pagePrefix = "page";
+    let pageCount = 17;
+
+    if (document.getElementById("brand-01")) {
+      pagePrefix = "brand";
+      pageCount = 8; // 品牌後台共 8 頁
+    } else if (document.getElementById("admin-01")) {
+      pagePrefix = "admin";
+      pageCount = 6; // 管理後台共 6 頁
+    }
+
     const ids = Array.from(
-      { length: 17 },
-      (_, i) => `page-${String(i + 1).padStart(2, "0")}`
+      { length: pageCount },
+      (_, i) => `${pagePrefix}-${String(i + 1).padStart(2, "0")}`
     );
     const missing = ids.filter((id) => {
       const el = document.getElementById(id);
@@ -34,10 +47,20 @@ window.addEventListener("DOMContentLoaded", () => {
       console.warn("FlipTok debug: 以下容器尚未填入內容", missing);
     }
 
-    // 全域導覽：滾動到指定頁面容器（page-XX）
+    // 全域導覽：滾動到指定頁面容器（支援 page-XX、brand-XX、admin-XX）
     window.goToPage = function (pageNumber) {
       try {
-        const id = `page-${String(pageNumber).toString().padStart(2, "0")}`;
+        // 自動檢測頁面前綴
+        let prefix = "page";
+        if (document.getElementById("brand-01")) {
+          prefix = "brand";
+        } else if (document.getElementById("admin-01")) {
+          prefix = "admin";
+        }
+
+        const id = `${prefix}-${String(pageNumber)
+          .toString()
+          .padStart(2, "0")}`;
         const el = document.getElementById(id);
         if (!el) {
           console.warn("FlipTok nav: page not found:", id);

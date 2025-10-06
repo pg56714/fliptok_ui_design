@@ -1,5 +1,5 @@
 // 品牌 03: 審核大使創作
-document.getElementById("brand-03").innerHTML = `
+document.getElementById("brand-02").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>
@@ -12,12 +12,18 @@ document.getElementById("brand-03").innerHTML = `
 
   <div class="page-content" style="bottom: 0">
     <div style="padding: 20px">
-      <button class="btn btn-text" style="padding: 8px; margin-bottom: 20px" onclick="goToPage(2)">
-        <i class="fas fa-arrow-left" style="margin-right: 8px"></i> 返回
-      </button>
-
-      <h2 style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px">內容審核</h2>
-      <p style="font-size: 14px; color: #64748b; margin-bottom: 24px">待審核: 12 則</p>
+      <div style="position: relative; margin-bottom: 24px">
+        <button 
+          onclick="goToPage(1)" 
+          style="position: absolute; left: 0; top: 4px; background: white; border: 1.5px solid #e2e8f0; width: 36px; height: 36px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #64748b; cursor: pointer; transition: all 0.3s"
+          onmouseover="this.style.background='#f8fafc'; this.style.borderColor='#cbd5e1'"
+          onmouseout="this.style.background='white'; this.style.borderColor='#e2e8f0'"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <h2 style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px; padding-left: 48px">內容審核</h2>
+        <p style="font-size: 14px; color: #64748b; padding-left: 48px">待審核: 12 則</p>
+      </div>
 
       <div style="display: grid; gap: 12px">
         ${[1, 2, 3]
@@ -25,7 +31,7 @@ document.getElementById("brand-03").innerHTML = `
             (i) => `
           <div class="card" style="padding: 16px">
             <div style="display: flex; gap: 12px; margin-bottom: 16px">
-              <img src="https://images.unsplash.com/photo-152338121${i}0434-271e8be1f52b?w=80&h=120&fit=crop" alt="Video" style="width: 60px; height: 90px; border-radius: 8px; object-fit: cover">
+              <img src="https://images.unsplash.com/photo-152338121${i}0434-271e8be1f52b?w=80&h=120&fit=crop" onerror="this.src='https://images.unsplash.com/photo-1483985988355-763728e1935b?w=80&h=120&fit=crop'" alt="Video" style="width: 60px; height: 90px; border-radius: 8px; object-fit: cover; background: #f1f5f9">
               <div style="flex: 1">
                 <div style="font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 4px">@emily_fashion</div>
                 <div style="font-size: 12px; color: #64748b; margin-bottom: 8px">

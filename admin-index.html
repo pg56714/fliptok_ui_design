@@ -12,30 +12,58 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-title">FlipTok - 平台管理員後台</div>
-    <!-- 01. Admin 登入頁 -->
+    <div
+      class="page-title"
+      style="
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <a
+        href="index.html"
+        style="
+          position: absolute;
+          left: 20px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 10px 20px;
+          background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+          color: white;
+          text-decoration: none;
+          border-radius: 12px;
+          font-size: 14px;
+          font-weight: 600;
+          transition: all 0.3s;
+          box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+        "
+        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(79,172,254,0.4)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(79,172,254,0.3)'"
+      >
+        <i class="fas fa-arrow-left"></i>
+        返回選擇角色
+      </a>
+      <span>FlipTok - 平台管理員後台</span>
+    </div>
+    <!-- 01. 平台儀表板 -->
     <div id="admin-01"></div>
-    <!-- 02. 平台儀表板 -->
+    <!-- 02. 創建品牌帳號 -->
     <div id="admin-02"></div>
-    <!-- 03. 創建品牌帳號 -->
+    <!-- 03. 品牌列表管理 -->
     <div id="admin-03"></div>
-    <!-- 04. 品牌列表管理 -->
+    <!-- 04. 平台整體收益 -->
     <div id="admin-04"></div>
-    <!-- 05. 平台整體收益 -->
+    <!-- 05. 內容審核 -->
     <div id="admin-05"></div>
-    <!-- 06. 用戶管理 -->
+    <!-- 06. 系統設定 -->
     <div id="admin-06"></div>
-    <!-- 07. 內容審核 -->
-    <div id="admin-07"></div>
-    <!-- 08. 系統設定 -->
-    <div id="admin-08"></div>
 
-    <script type="module" src="admin-pages/page-01-login.js"></script>
     <script type="module" src="admin-pages/page-02-dashboard.js"></script>
     <script type="module" src="admin-pages/page-03-create-brand.js"></script>
     <script type="module" src="admin-pages/page-04-brands.js"></script>
     <script type="module" src="admin-pages/page-05-revenue.js"></script>
-    <script type="module" src="admin-pages/page-06-users.js"></script>
     <script type="module" src="admin-pages/page-07-content.js"></script>
     <script type="module" src="admin-pages/page-08-settings.js"></script>
 

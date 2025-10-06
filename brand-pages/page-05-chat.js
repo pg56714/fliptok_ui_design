@@ -1,5 +1,5 @@
 // 品牌 05: 與大使聊天室
-document.getElementById("brand-05").innerHTML = `
+document.getElementById("brand-04").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>
@@ -12,11 +12,17 @@ document.getElementById("brand-05").innerHTML = `
 
   <div class="page-content" style="bottom: 0">
     <div style="padding: 20px">
-      <button class="btn btn-text" style="padding: 8px; margin-bottom: 20px" onclick="goToPage(2)">
-        <i class="fas fa-arrow-left" style="margin-right: 8px"></i> 返回
-      </button>
-
-      <h2 style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 24px">聊天室</h2>
+      <div style="position: relative; margin-bottom: 24px">
+        <button 
+          onclick="goToPage(1)" 
+          style="position: absolute; left: 0; top: 4px; background: white; border: 1.5px solid #e2e8f0; width: 36px; height: 36px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #64748b; cursor: pointer; transition: all 0.3s"
+          onmouseover="this.style.background='#f8fafc'; this.style.borderColor='#cbd5e1'"
+          onmouseout="this.style.background='white'; this.style.borderColor='#e2e8f0'"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <h2 style="font-size: 28px; font-weight: 800; color: #1e293b; padding-left: 48px">聊天室</h2>
+      </div>
 
       <div style="display: grid; gap: 12px">
         ${[
@@ -30,7 +36,7 @@ document.getElementById("brand-05").innerHTML = `
             unread ? "border: 1.5px solid #f5576c" : ""
           }" onclick="alert('進入聊天：${name}')">
             <div style="display: flex; align-items: center; gap: 12px">
-              <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=52&h=52&fit=crop" alt="User" style="width: 52px; height: 52px; border-radius: 26px; object-fit: cover">
+              <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=52&h=52&fit=crop" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=52&h=52&fit=crop'" alt="User" style="width: 52px; height: 52px; border-radius: 26px; object-fit: cover; background: #f1f5f9">
               <div style="flex: 1">
                 <div style="display: flex; justify-content: space-between; margin-bottom: 4px">
                   <div style="font-size: 16px; font-weight: 700; color: #1e293b">${name}</div>

@@ -1,5 +1,5 @@
 // Admin 03: 創建品牌帳號
-document.getElementById("admin-03").innerHTML = `
+document.getElementById("admin-02").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>
@@ -12,12 +12,18 @@ document.getElementById("admin-03").innerHTML = `
 
   <div class="page-content" style="bottom: 0">
     <div style="padding: 20px">
-      <button class="btn btn-text" style="padding: 8px; margin-bottom: 20px" onclick="goToPage(2)">
-        <i class="fas fa-arrow-left" style="margin-right: 8px"></i> 返回
-      </button>
-
-      <h2 style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px">創建品牌帳號</h2>
-      <p style="font-size: 14px; color: #64748b; margin-bottom: 32px">新增品牌到 FlipTok 平台</p>
+      <div style="position: relative; margin-bottom: 32px">
+        <button 
+          onclick="goToPage(1)" 
+          style="position: absolute; left: 0; top: 4px; background: white; border: 1.5px solid #e2e8f0; width: 36px; height: 36px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #64748b; cursor: pointer; transition: all 0.3s"
+          onmouseover="this.style.background='#f8fafc'; this.style.borderColor='#cbd5e1'"
+          onmouseout="this.style.background='white'; this.style.borderColor='#e2e8f0'"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <h2 style="font-size: 28px; font-weight: 800; color: #1e293b; margin-bottom: 8px; padding-left: 48px">創建品牌帳號</h2>
+        <p style="font-size: 14px; color: #64748b; padding-left: 48px">新增品牌到 FlipTok 平台</p>
+      </div>
 
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">品牌資訊</h3>

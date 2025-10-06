@@ -12,27 +12,58 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-title">FlipTok - 品牌後台管理系統</div>
-    <!-- 01. 品牌登入頁 -->
+    <div
+      class="page-title"
+      style="
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <a
+        href="index.html"
+        style="
+          position: absolute;
+          left: 20px;
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 10px 20px;
+          background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+          color: white;
+          text-decoration: none;
+          border-radius: 12px;
+          font-size: 14px;
+          font-weight: 600;
+          transition: all 0.3s;
+          box-shadow: 0 4px 12px rgba(240, 147, 251, 0.3);
+        "
+        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(240,147,251,0.4)'"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(240,147,251,0.3)'"
+      >
+        <i class="fas fa-arrow-left"></i>
+        返回選擇角色
+      </a>
+      <span>FlipTok - 品牌後台管理系統</span>
+    </div>
+    <!-- 01. 品牌儀表板 -->
     <div id="brand-01"></div>
-    <!-- 02. 品牌儀表板 -->
+    <!-- 02. 審核大使創作 -->
     <div id="brand-02"></div>
-    <!-- 03. 審核大使創作 -->
+    <!-- 03. 大使列表 -->
     <div id="brand-03"></div>
-    <!-- 04. 大使列表 -->
+    <!-- 04. 與大使聊天室 -->
     <div id="brand-04"></div>
-    <!-- 05. 與大使聊天室 -->
+    <!-- 05. 品牌收益報表 -->
     <div id="brand-05"></div>
-    <!-- 06. 品牌收益報表 -->
+    <!-- 06. 商品管理 -->
     <div id="brand-06"></div>
-    <!-- 07. 商品管理 -->
+    <!-- 07. 促銷活動管理 -->
     <div id="brand-07"></div>
-    <!-- 08. 促銷活動管理 -->
+    <!-- 08. 品牌設定 -->
     <div id="brand-08"></div>
-    <!-- 09. 品牌設定 -->
-    <div id="brand-09"></div>
 
-    <script type="module" src="brand-pages/page-01-login.js"></script>
     <script type="module" src="brand-pages/page-02-dashboard.js"></script>
     <script type="module" src="brand-pages/page-03-content-review.js"></script>
     <script type="module" src="brand-pages/page-04-ambassador-list.js"></script>

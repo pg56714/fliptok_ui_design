@@ -28,17 +28,11 @@
   ];
 
   function applyBrandAction(name) {
-    if (name === "時尚潮牌 A") {
-      goToPage(15);
-      return;
-    }
-    alert("已送出加入申請（示意）");
+    goToPage(15);
   }
 
   const listHtml = brands
     .map((b) => {
-      const isJoined = b.name === "時尚潮牌 A";
-      const ctaLabel = isJoined ? "進入" : "申請";
       return `
     <div class="card" style="padding:12px; overflow:hidden">
       <div style="display:flex; gap:12px; align-items:center">
@@ -62,7 +56,7 @@
           <div style="display:flex; justify-content:flex-end">
             <button class="btn btn-primary" style="white-space:nowrap; padding:6px 12px; font-size:12px" onclick="(${applyBrandAction.toString()})('${
         b.name
-      }')">${ctaLabel}</button>
+      }')">進入</button>
           </div>
         </div>
       </div>
@@ -93,8 +87,6 @@
           <input type="text" class="form-input" placeholder="搜尋品牌..." style="padding-left: 44px">
           <i class="fas fa-search" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #94a3b8"></i>
         </div>
-
-        <div style="font-size: 12px; color:#64748b; margin: 8px 0 12px">「已加入」顯示「進入」，其他品牌顯示「申請」</div>
 
         <div style="display:grid; gap:12px">
           ${listHtml}

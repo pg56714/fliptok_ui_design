@@ -21,12 +21,12 @@ document.getElementById("page-10").innerHTML = `
       <div class="card-gradient" style="margin-bottom: 20px">
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px">
           <i class="fas fa-crown" style="font-size: 24px"></i>
-          <div>
+          <div style="flex: 1">
             <div style="font-size: 18px; font-weight: 800; margin-bottom: 4px">金牌大使</div>
             <div style="font-size: 14px; opacity: 0.9">時尚潮牌 A</div>
           </div>
         </div>
-        <div style="background: rgba(255,255,255,0.2); border-radius: 12px; padding: 16px">
+        <div style="background: rgba(255,255,255,0.2); border-radius: 12px; padding: 16px; margin-bottom: 12px">
           <div style="display: flex; justify-content: space-between; margin-bottom: 8px">
             <span style="font-size: 14px; opacity: 0.9">認證狀態</span>
             <span style="font-size: 14px; font-weight: 700">已認證 ✓</span>
@@ -40,6 +40,11 @@ document.getElementById("page-10").innerHTML = `
             <span style="font-size: 14px; font-weight: 700">Level 3</span>
           </div>
         </div>
+        <!-- 品牌聊天按鈕 -->
+        <button class="btn" style="width: 100%; background: white; color: #f5576c; padding: 14px; font-size: 15px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px" onclick="goToPage('10a')">
+          <i class="fas fa-comments"></i>
+          <span>與品牌聊天</span>
+        </button>
       </div>
 
       <!-- 大使等級 -->
