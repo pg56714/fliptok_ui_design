@@ -12,134 +12,109 @@ document.getElementById("page-09a").innerHTML = `
 
   <div class="page-content">
     <div class="header-bar">
-      <button class="btn-icon" onclick="goToPage(9)">
-        <i class="fas fa-arrow-left"></i>
-      </button>
       <div class="header-title">我的關注</div>
-      <div style="width: 40px"></div>
+      <div class="header-subtitle">關注清單</div>
     </div>
 
     <div style="padding: 16px">
       <!-- 統計資訊 -->
-      <div style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); border-radius: 20px; padding: 24px; margin-bottom: 24px; color: white">
-        <div style="display: flex; justify-content: space-around; text-align: center">
-          <div>
-            <div style="font-size: 32px; font-weight: 800; margin-bottom: 4px">24</div>
-            <div style="font-size: 13px; opacity: 0.9">關注的品牌</div>
-          </div>
-          <div style="width: 1px; background: rgba(255,255,255,0.3)"></div>
-          <div>
-            <div style="font-size: 32px; font-weight: 800; margin-bottom: 4px">18</div>
-            <div style="font-size: 13px; opacity: 0.9">關注的大使</div>
-          </div>
+      <div style="background: #f8fafc; border-radius: 12px; padding: 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between">
+        <div>
+          <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">關注的大使</div>
+          <div style="font-size: 24px; font-weight: 800; color: #1e293b">18 位</div>
         </div>
+        <i class="fas fa-users" style="font-size: 32px; color: #e0e7ff"></i>
       </div>
 
-      <!-- 分類標籤 -->
-      <div style="display: flex; gap: 12px; margin-bottom: 20px; overflow-x: auto; padding-bottom: 8px">
-        <button style="padding: 8px 20px; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white; border: none; border-radius: 20px; font-weight: 600; white-space: nowrap; cursor: pointer">
-          全部 (42)
-        </button>
-        <button style="padding: 8px 20px; background: white; color: #64748b; border: 1.5px solid #e2e8f0; border-radius: 20px; font-weight: 600; white-space: nowrap; cursor: pointer">
-          品牌 (24)
-        </button>
-        <button style="padding: 8px 20px; background: white; color: #64748b; border: 1.5px solid #e2e8f0; border-radius: 20px; font-weight: 600; white-space: nowrap; cursor: pointer">
-          大使 (18)
-        </button>
-      </div>
-
-      <!-- 關注列表 -->
+      <!-- 大使列表 -->
       <div style="display: grid; gap: 12px">
-        <!-- 品牌項目 -->
-        <div style="background: white; border-radius: 16px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 12px">
-          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=100&h=100&fit=crop" alt="Brand" style="width: 60px; height: 60px; border-radius: 12px; object-fit: cover">
-          <div style="flex: 1">
+        <!-- 大使項目 1 -->
+        <div style="background: #f8fafc; border-radius: 16px; padding: 16px; display: flex; align-items: center; gap: 12px">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="User" style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0">
+          <div style="flex: 1; min-width: 0">
             <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px">
-              <div style="font-size: 16px; font-weight: 700; color: #1e293b">時尚潮牌 A</div>
-              <i class="fas fa-check-circle" style="color: #6366f1; font-size: 14px"></i>
-            </div>
-            <div style="font-size: 13px; color: #64748b; margin-bottom: 6px">856 位大使 • 12.5K 粉絲</div>
-            <div style="display: flex; gap: 4px">
-              <span style="background: #f1f5f9; color: #64748b; padding: 2px 8px; border-radius: 4px; font-size: 11px">時尚</span>
-              <span style="background: #f1f5f9; color: #64748b; padding: 2px 8px; border-radius: 4px; font-size: 11px">運動</span>
-            </div>
-          </div>
-          <button class="btn" style="background: #fee2e2; color: #dc2626; border: 1.5px solid #fca5a5; padding: 8px 16px; font-size: 13px; font-weight: 600" onclick="if(confirm('確定要取消關注嗎？')) { this.parentElement.style.display='none'; alert('已取消關注') }">
-            取消關注
-          </button>
-        </div>
-
-        <!-- 大使項目 -->
-        <div style="background: white; border-radius: 16px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 12px">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop" alt="User" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover">
-          <div style="flex: 1">
-            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px">
-              <div style="font-size: 16px; font-weight: 700; color: #1e293b">小美</div>
-              <div style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700">
-                <i class="fas fa-crown" style="margin-right: 2px"></i>大使 · 時尚潮牌 A
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b">@emily_fashion</div>
+              <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: white; padding: 2px 6px; border-radius: 8px; font-size: 9px; font-weight: 700; white-space: nowrap">
+                <i class="fas fa-crown" style="margin-right: 2px"></i>金牌大使
               </div>
             </div>
-            <div style="font-size: 13px; color: #64748b; margin-bottom: 6px">時尚潮牌 A • 8,234 粉絲</div>
-            <div style="font-size: 12px; color: #64748b">最近發布：經典款運動鞋開箱</div>
+            <div style="font-size: 12px; color: #64748b; margin-bottom: 4px">時尚潮牌 A • 12.5K 粉絲</div>
+            <div style="font-size: 11px; color: #94a3b8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">最近發布：秋冬穿搭靈感分享</div>
           </div>
-          <button class="btn" style="background: #fee2e2; color: #dc2626; border: 1.5px solid #fca5a5; padding: 8px 16px; font-size: 13px; font-weight: 600" onclick="if(confirm('確定要取消關注嗎？')) { this.parentElement.style.display='none'; alert('已取消關注') }">
-            取消關注
-          </button>
-        </div>
-
-        <!-- 品牌項目 2 -->
-        <div style="background: white; border-radius: 16px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 12px">
-          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=100&h=100&fit=crop" alt="Brand" style="width: 60px; height: 60px; border-radius: 12px; object-fit: cover">
-          <div style="flex: 1">
-            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px">
-              <div style="font-size: 16px; font-weight: 700; color: #1e293b">精品美妝 B</div>
-              <i class="fas fa-check-circle" style="color: #6366f1; font-size: 14px"></i>
-            </div>
-            <div style="font-size: 13px; color: #64748b; margin-bottom: 6px">642 位大使 • 9.8K 粉絲</div>
-            <div style="display: flex; gap: 4px">
-              <span style="background: #f1f5f9; color: #64748b; padding: 2px 8px; border-radius: 4px; font-size: 11px">美妝</span>
-              <span style="background: #f1f5f9; color: #64748b; padding: 2px 8px; border-radius: 4px; font-size: 11px">保養</span>
-            </div>
-          </div>
-          <button class="btn" style="background: #fee2e2; color: #dc2626; border: 1.5px solid #fca5a5; padding: 8px 16px; font-size: 13px; font-weight: 600" onclick="if(confirm('確定要取消關注嗎？')) { this.parentElement.style.display='none'; alert('已取消關注') }">
-            取消關注
+          <button style="background: white; color: #64748b; border: 1.5px solid #e2e8f0; padding: 8px 16px; border-radius: 12px; font-size: 12px; font-weight: 600; cursor: pointer; flex-shrink: 0; white-space: nowrap" onclick="if(confirm('確定要取消關注嗎？')) { this.innerText='已取消'; this.style.background='#fee2e2'; this.style.color='#dc2626'; this.style.borderColor='#fca5a5'; this.disabled=true; }">
+            追蹤中
           </button>
         </div>
 
         <!-- 大使項目 2 -->
-        <div style="background: white; border-radius: 16px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 12px">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="User" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover">
-          <div style="flex: 1">
+        <div style="background: #f8fafc; border-radius: 16px; padding: 16px; display: flex; align-items: center; gap: 12px">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="User" style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0">
+          <div style="flex: 1; min-width: 0">
             <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px">
-              <div style="font-size: 16px; font-weight: 700; color: #1e293b">阿傑</div>
-              <div style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: white; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 700">
-                <i class="fas fa-crown" style="margin-right: 2px"></i>大使 · 科技品牌 D
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b">@sarah_beauty</div>
+              <div style="background: linear-gradient(135deg, #d1d5db 0%, #9ca3af 100%); color: white; padding: 2px 6px; border-radius: 8px; font-size: 9px; font-weight: 700; white-space: nowrap">
+                <i class="fas fa-crown" style="margin-right: 2px"></i>銀牌大使
               </div>
             </div>
-            <div style="font-size: 13px; color: #64748b; margin-bottom: 6px">科技品牌 D • 6,521 粉絲</div>
-            <div style="font-size: 12px; color: #64748b">最近發布：最新智慧手錶評測</div>
+            <div style="font-size: 12px; color: #64748b; margin-bottom: 4px">精品美妝 B • 8.2K 粉絲</div>
+            <div style="font-size: 11px; color: #94a3b8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">最近發布：5分鐘快速妝容教學</div>
           </div>
-          <button class="btn" style="background: #fee2e2; color: #dc2626; border: 1.5px solid #fca5a5; padding: 8px 16px; font-size: 13px; font-weight: 600" onclick="if(confirm('確定要取消關注嗎？')) { this.parentElement.style.display='none'; alert('已取消關注') }">
-            取消關注
+          <button style="background: white; color: #64748b; border: 1.5px solid #e2e8f0; padding: 8px 16px; border-radius: 12px; font-size: 12px; font-weight: 600; cursor: pointer; flex-shrink: 0; white-space: nowrap" onclick="if(confirm('確定要取消關注嗎？')) { this.innerText='已取消'; this.style.background='#fee2e2'; this.style.color='#dc2626'; this.style.borderColor='#fca5a5'; this.disabled=true; }">
+            追蹤中
           </button>
         </div>
 
-        <!-- 品牌項目 3 -->
-        <div style="background: white; border-radius: 16px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 12px">
-          <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=100&h=100&fit=crop" alt="Brand" style="width: 60px; height: 60px; border-radius: 12px; object-fit: cover">
-          <div style="flex: 1">
+        <!-- 大使項目 3 -->
+        <div style="background: #f8fafc; border-radius: 16px; padding: 16px; display: flex; align-items: center; gap: 12px">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="User" style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0">
+          <div style="flex: 1; min-width: 0">
             <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px">
-              <div style="font-size: 16px; font-weight: 700; color: #1e293b">生活居家 C</div>
-              <i class="fas fa-check-circle" style="color: #6366f1; font-size: 14px"></i>
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b">@alex_lifestyle</div>
+              <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: white; padding: 2px 6px; border-radius: 8px; font-size: 9px; font-weight: 700; white-space: nowrap">
+                <i class="fas fa-crown" style="margin-right: 2px"></i>金牌大使
+              </div>
             </div>
-            <div style="font-size: 13px; color: #64748b; margin-bottom: 6px">423 位大使 • 7.2K 粉絲</div>
-            <div style="display: flex; gap: 4px">
-              <span style="background: #f1f5f9; color: #64748b; padding: 2px 8px; border-radius: 4px; font-size: 11px">居家</span>
-              <span style="background: #f1f5f9; color: #64748b; padding: 2px 8px; border-radius: 4px; font-size: 11px">生活</span>
-            </div>
+            <div style="font-size: 12px; color: #64748b; margin-bottom: 4px">生活居家 C • 15.3K 粉絲</div>
+            <div style="font-size: 11px; color: #94a3b8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">最近發布：居家收納整理技巧</div>
           </div>
-          <button class="btn" style="background: #fee2e2; color: #dc2626; border: 1.5px solid #fca5a5; padding: 8px 16px; font-size: 13px; font-weight: 600" onclick="if(confirm('確定要取消關注嗎？')) { this.parentElement.style.display='none'; alert('已取消關注') }">
-            取消關注
+          <button style="background: white; color: #64748b; border: 1.5px solid #e2e8f0; padding: 8px 16px; border-radius: 12px; font-size: 12px; font-weight: 600; cursor: pointer; flex-shrink: 0; white-space: nowrap" onclick="if(confirm('確定要取消關注嗎？')) { this.innerText='已取消'; this.style.background='#fee2e2'; this.style.color='#dc2626'; this.style.borderColor='#fca5a5'; this.disabled=true; }">
+            追蹤中
+          </button>
+        </div>
+
+        <!-- 大使項目 4 -->
+        <div style="background: #f8fafc; border-radius: 16px; padding: 16px; display: flex; align-items: center; gap: 12px">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop" alt="User" style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0">
+          <div style="flex: 1; min-width: 0">
+            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px">
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b">@mike_tech</div>
+              <div style="background: linear-gradient(135deg, #d1d5db 0%, #9ca3af 100%); color: white; padding: 2px 6px; border-radius: 8px; font-size: 9px; font-weight: 700; white-space: nowrap">
+                <i class="fas fa-crown" style="margin-right: 2px"></i>銀牌大使
+              </div>
+            </div>
+            <div style="font-size: 12px; color: #64748b; margin-bottom: 4px">科技品牌 D • 6.5K 粉絲</div>
+            <div style="font-size: 11px; color: #94a3b8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">最近發布：最新智慧手錶評測</div>
+          </div>
+          <button style="background: white; color: #64748b; border: 1.5px solid #e2e8f0; padding: 8px 16px; border-radius: 12px; font-size: 12px; font-weight: 600; cursor: pointer; flex-shrink: 0; white-space: nowrap" onclick="if(confirm('確定要取消關注嗎？')) { this.innerText='已取消'; this.style.background='#fee2e2'; this.style.color='#dc2626'; this.style.borderColor='#fca5a5'; this.disabled=true; }">
+            追蹤中
+          </button>
+        </div>
+
+        <!-- 大使項目 5 -->
+        <div style="background: #f8fafc; border-radius: 16px; padding: 16px; display: flex; align-items: center; gap: 12px">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&h=60&fit=crop" alt="User" style="width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0">
+          <div style="flex: 1; min-width: 0">
+            <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 4px">
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b">@lisa_fitness</div>
+              <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); color: white; padding: 2px 6px; border-radius: 8px; font-size: 9px; font-weight: 700; white-space: nowrap">
+                <i class="fas fa-crown" style="margin-right: 2px"></i>金牌大使
+              </div>
+            </div>
+            <div style="font-size: 12px; color: #64748b; margin-bottom: 4px">運動品牌 E • 9.8K 粉絲</div>
+            <div style="font-size: 11px; color: #94a3b8; overflow: hidden; text-overflow: ellipsis; white-space: nowrap">最近發布：居家運動器材推薦</div>
+          </div>
+          <button style="background: white; color: #64748b; border: 1.5px solid #e2e8f0; padding: 8px 16px; border-radius: 12px; font-size: 12px; font-weight: 600; cursor: pointer; flex-shrink: 0; white-space: nowrap" onclick="if(confirm('確定要取消關注嗎？')) { this.innerText='已取消'; this.style.background='#fee2e2'; this.style.color='#dc2626'; this.style.borderColor='#fca5a5'; this.disabled=true; }">
+            追蹤中
           </button>
         </div>
       </div>
