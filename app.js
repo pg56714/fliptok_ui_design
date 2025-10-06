@@ -1,25 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
   try {
-    // 檢查當前是否為首頁（首頁使用內聯樣式，不需要 styles.css）
-    const isIndexPage = document.querySelector(".role-container") !== null;
-
-    // 只在非首頁時檢查樣式是否載入
-    if (!isIndexPage) {
-      const hasStyles = Array.from(document.styleSheets).some(
-        (s) =>
-          (s.href || "").includes("styles") || (s.href || "").includes("main")
-      );
-      if (!hasStyles) {
-        const cssWarn = document.createElement("div");
-        cssWarn.style.cssText =
-          "position:fixed;top:8px;left:8px;right:8px;background:#fee2e2;border:1px solid #fecaca;color:#991b1b;padding:10px 12px;border-radius:8px;font-family:system-ui,Segoe UI,Inter,sans-serif;font-size:12px;z-index:9999;";
-        cssWarn.innerHTML =
-          "樣式未載入（styles.css）。請確認檔案存在於與 index.html 同一資料夾，或以本機 http 伺服器開啟而非直接 file://。";
-        document.body.appendChild(cssWarn);
-        console.error("FlipTok debug: styles.css not loaded");
-      }
-    }
-
     // 檢測當前是哪個系統（用戶端、品牌端或管理端）
     let pagePrefix = "page";
     let pageCount = 17;
