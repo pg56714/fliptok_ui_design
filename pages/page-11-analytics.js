@@ -73,53 +73,53 @@ document.getElementById("page-11").innerHTML = `
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">熱門內容</h3>
         <div style="display: grid; gap: 12px">
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=60&h=60&fit=crop" alt="Content" style="width: 48px; height: 48px; border-radius: 8px; margin-right: 12px">
-            <div style="flex: 1">
-              <div style="font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 2px">今日最佳穿搭</div>
-              <div style="font-size: 12px; color: #64748b; margin-bottom: 4px">2 天前發布</div>
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=60&h=60&fit=crop" alt="Content" style="width: 48px; height: 48px; border-radius: 8px; flex-shrink: 0">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+              <div style="font-size: 14px; font-weight: 700; color: #1e293b">今日最佳穿搭</div>
+              <div style="font-size: 12px; color: #64748b">2 天前發布</div>
               <div style="display: flex; gap: 12px; font-size: 11px; color: #64748b">
                 <span><i class="fas fa-heart" style="margin-right: 2px"></i>856</span>
                 <span><i class="fas fa-comment" style="margin-right: 2px"></i>23</span>
                 <span><i class="fas fa-share" style="margin-right: 2px"></i>12</span>
               </div>
             </div>
-            <div style="text-align: right">
-              <div style="font-size: 12px; color: #10b981; font-weight: 700">+15%</div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px; flex-shrink: 0">
+              <div style="padding: 4px 10px; background: #d1fae5; color: #059669; border-radius: 16px; font-size: 13px; font-weight: 700">+15%</div>
               <div style="font-size: 10px; color: #64748b">成長率</div>
             </div>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=60&h=60&fit=crop" alt="Content" style="width: 48px; height: 48px; border-radius: 8px; margin-right: 12px">
-            <div style="flex: 1">
-              <div style="font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 2px">美妝教學分享</div>
-              <div style="font-size: 12px; color: #64748b; margin-bottom: 4px">3 天前發布</div>
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=60&h=60&fit=crop" alt="Content" style="width: 48px; height: 48px; border-radius: 8px; flex-shrink: 0">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+              <div style="font-size: 14px; font-weight: 700; color: #1e293b">美妝教學分享</div>
+              <div style="font-size: 12px; color: #64748b">3 天前發布</div>
               <div style="display: flex; gap: 12px; font-size: 11px; color: #64748b">
                 <span><i class="fas fa-heart" style="margin-right: 2px"></i>642</span>
                 <span><i class="fas fa-comment" style="margin-right: 2px"></i>18</span>
                 <span><i class="fas fa-share" style="margin-right: 2px"></i>8</span>
               </div>
             </div>
-            <div style="text-align: right">
-              <div style="font-size: 12px; color: #10b981; font-weight: 700">+8%</div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px; flex-shrink: 0">
+              <div style="padding: 4px 10px; background: #d1fae5; color: #059669; border-radius: 16px; font-size: 13px; font-weight: 700">+8%</div>
               <div style="font-size: 10px; color: #64748b">成長率</div>
             </div>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=60&h=60&fit=crop" alt="Content" style="width: 48px; height: 48px; border-radius: 8px; margin-right: 12px">
-            <div style="flex: 1">
-              <div style="font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 2px">居家佈置靈感</div>
-              <div style="font-size: 12px; color: #64748b; margin-bottom: 4px">5 天前發布</div>
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=60&h=60&fit=crop" alt="Content" style="width: 48px; height: 48px; border-radius: 8px; flex-shrink: 0">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+              <div style="font-size: 14px; font-weight: 700; color: #1e293b">居家佈置靈感</div>
+              <div style="font-size: 12px; color: #64748b">5 天前發布</div>
               <div style="display: flex; gap: 12px; font-size: 11px; color: #64748b">
                 <span><i class="fas fa-heart" style="margin-right: 2px"></i>423</span>
                 <span><i class="fas fa-comment" style="margin-right: 2px"></i>15</span>
                 <span><i class="fas fa-share" style="margin-right: 2px"></i>6</span>
               </div>
             </div>
-            <div style="text-align: right">
-              <div style="font-size: 12px; color: #10b981; font-weight: 700">+12%</div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px; flex-shrink: 0">
+              <div style="padding: 4px 10px; background: #d1fae5; color: #059669; border-radius: 16px; font-size: 13px; font-weight: 700">+12%</div>
               <div style="font-size: 10px; color: #64748b">成長率</div>
             </div>
           </div>

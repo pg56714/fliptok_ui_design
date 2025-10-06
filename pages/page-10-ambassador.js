@@ -87,48 +87,48 @@ document.getElementById("page-10").innerHTML = `
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">大使權益</h3>
         <div style="display: grid; gap: 12px">
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #fef3c7; color: #f59e0b">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #fef3c7; color: #f59e0b; flex-shrink: 0">
               <i class="fas fa-gift"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">專屬商品折扣</div>
               <div class="list-subtitle">享受 15% 專屬優惠</div>
+              <span class="badge badge-success" style="align-self: flex-start; margin-top: 4px">已啟用</span>
             </div>
-            <span class="badge badge-success">已啟用</span>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #e0f2fe; color: #0284c7">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #e0f2fe; color: #0284c7; flex-shrink: 0">
               <i class="fas fa-star"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">優先體驗新產品</div>
               <div class="list-subtitle">搶先試用最新商品</div>
+              <span class="badge badge-success" style="align-self: flex-start; margin-top: 4px">已啟用</span>
             </div>
-            <span class="badge badge-success">已啟用</span>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #f3e8ff; color: #8b5cf6">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #f3e8ff; color: #8b5cf6; flex-shrink: 0">
               <i class="fas fa-users"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">專屬社群</div>
               <div class="list-subtitle">加入大使專屬群組</div>
+              <span class="badge badge-success" style="align-self: flex-start; margin-top: 4px">已啟用</span>
             </div>
-            <span class="badge badge-success">已啟用</span>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #f0fdf4; color: #16a34a">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #f0fdf4; color: #16a34a; flex-shrink: 0">
               <i class="fas fa-trophy"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">年度獎勵</div>
               <div class="list-subtitle">年度表現獎勵計畫</div>
+              <span class="badge badge-success" style="align-self: flex-start; margin-top: 4px">已啟用</span>
             </div>
-            <span class="badge badge-success">已啟用</span>
           </div>
         </div>
       </div>

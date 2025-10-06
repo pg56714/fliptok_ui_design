@@ -93,34 +93,34 @@ document.getElementById("page-17").innerHTML = `
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">熱門大使</h3>
         <div style="display: grid; gap: 12px">
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%236366f1'/><stop offset='1' stop-color='%238b5cf6'/></linearGradient></defs><circle cx='30' cy='30' r='30' fill='url(%23g)'/><circle cx='30' cy='24' r='10' fill='%23ffffff' fill-opacity='0.95'/><path d='M10 52a20 20 0 0140 0v2H10z' fill='%23ffffff' fill-opacity='0.95'/><circle cx='30' cy='24' r='8' fill='%23e0e7ff'/></svg>" alt="User" style="width: 48px; height: 48px; border-radius: 24px; margin-right: 12px; object-fit: cover; background:#e2e8f0">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%236366f1'/><stop offset='1' stop-color='%238b5cf6'/></linearGradient></defs><circle cx='30' cy='30' r='30' fill='url(%23g)'/><circle cx='30' cy='24' r='10' fill='%23ffffff' fill-opacity='0.95'/><path d='M10 52a20 20 0 0140 0v2H10z' fill='%23ffffff' fill-opacity='0.95'/><circle cx='30' cy='24' r='8' fill='%23e0e7ff'/></svg>" alt="User" style="width: 48px; height: 48px; border-radius: 24px; object-fit: cover; background:#e2e8f0; flex-shrink: 0">
             <div style="flex: 1">
               <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">@emily_fashion</div>
               <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">金牌大使 • 12.5k 粉絲</div>
               <div style="font-size: 12px; color: #6366f1">2.3k 讚 • 89 評論</div>
             </div>
-            <button style="background: #6366f1; color: white; border: none; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 600">關注</button>
+            <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; flex-shrink: 0">關注</button>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; margin-right: 12px">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; flex-shrink: 0">
             <div style="flex: 1">
               <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">@sarah_beauty</div>
               <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">銀牌大使 • 8.2k 粉絲</div>
               <div style="font-size: 12px; color: #6366f1">1.8k 讚 • 156 評論</div>
             </div>
-            <button style="background: #6366f1; color: white; border: none; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 600">關注</button>
+            <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; flex-shrink: 0">關注</button>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; margin-right: 12px">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; flex-shrink: 0">
             <div style="flex: 1">
               <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">@alex_lifestyle</div>
               <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">銅牌大使 • 15.3k 粉絲</div>
               <div style="font-size: 12px; color: #6366f1">3.1k 讚 • 234 評論</div>
             </div>
-            <button style="background: #6366f1; color: white; border: none; padding: 6px 12px; border-radius: 16px; font-size: 12px; font-weight: 600">關注</button>
+            <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; flex-shrink: 0">關注</button>
           </div>
         </div>
       </div>

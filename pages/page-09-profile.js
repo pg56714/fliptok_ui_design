@@ -100,92 +100,52 @@ document.getElementById("page-09").innerHTML = `
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">設定</h3>
         <div style="display: grid; gap: 12px">
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0;">
-            <div class="list-icon" style="background: #fef3c7; color: #f59e0b">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #fef3c7; color: #f59e0b; flex-shrink: 0">
               <i class="fas fa-bell"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">粉絲影響購買通知</div>
               <div class="list-subtitle">當粉絲影響購買時，系統會悄悄通知大使。</div>
             </div>
-            <input type="checkbox" aria-label="粉絲影響購買通知切換" checked onchange="console.log('粉絲影響購買通知', this.checked)" style="width: 18px; height: 18px; accent-color: #6366f1; cursor: pointer">
+            <input type="checkbox" aria-label="粉絲影響購買通知切換" checked onchange="console.log('粉絲影響購買通知', this.checked)" style="width: 18px; height: 18px; accent-color: #6366f1; cursor: pointer; flex-shrink: 0">
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="alert('編輯個人資料')">
-            <div class="list-icon" style="background: #e0f2fe; color: #0284c7">
-              <i class="fas fa-user-edit"></i>
-            </div>
-            <div class="list-content">
-              <div class="list-title">編輯個人資料</div>
-              <div class="list-subtitle">修改頭像、暱稱和簡介</div>
-            </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
-          </div>
+          
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="goToPage('09a')">
-            <div class="list-icon" style="background: #dbeafe; color: #2563eb">
-              <i class="fas fa-heart"></i>
-            </div>
-            <div class="list-content">
-              <div class="list-title">我的關注</div>
-              <div class="list-subtitle">管理追蹤的品牌與大使</div>
-            </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
-          </div>
-
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="goToPage('09b')">
-            <div class="list-icon" style="background: #fce7f3; color: #ec4899">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px; cursor: pointer" onclick="goToPage('09b')">
+            <div class="list-icon" style="background: #fce7f3; color: #ec4899; flex-shrink: 0">
               <i class="fas fa-clipboard-list"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">用戶調查</div>
               <div class="list-subtitle">填寫問卷送購物金</div>
             </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
+            <i class="fas fa-chevron-right" style="color: #94a3b8; flex-shrink: 0"></i>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="alert('語言設定')">
-            <div class="list-icon" style="background: #f0fdf4; color: #16a34a">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px; cursor: pointer" onclick="alert('語言設定')">
+            <div class="list-icon" style="background: #f0fdf4; color: #16a34a; flex-shrink: 0">
               <i class="fas fa-language"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">語言設定</div>
               <div class="list-subtitle">繁體中文</div>
             </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
+            <i class="fas fa-chevron-right" style="color: #94a3b8; flex-shrink: 0"></i>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="alert('幫助中心')">
-            <div class="list-icon" style="background: #fef2f2; color: #dc2626">
-              <i class="fas fa-question-circle"></i>
-            </div>
-            <div class="list-content">
-              <div class="list-title">幫助中心</div>
-              <div class="list-subtitle">常見問題與支援</div>
-            </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
-          </div>
+          
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="alert('關於我們')">
-            <div class="list-icon" style="background: #f1f5f9; color: #64748b">
-              <i class="fas fa-info-circle"></i>
-            </div>
-            <div class="list-content">
-              <div class="list-title">關於 FlipTok</div>
-              <div class="list-subtitle">版本 1.0.0</div>
-            </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
-          </div>
-
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="alert('登出')">
-            <div class="list-icon" style="background: #fef2f2; color: #dc2626">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px; cursor: pointer" onclick="alert('登出')">
+            <div class="list-icon" style="background: #fef2f2; color: #dc2626; flex-shrink: 0">
               <i class="fas fa-sign-out-alt"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">登出</div>
               <div class="list-subtitle">安全退出帳戶</div>
             </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
+            <i class="fas fa-chevron-right" style="color: #94a3b8; flex-shrink: 0"></i>
           </div>
         </div>
       </div>

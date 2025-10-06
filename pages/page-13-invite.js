@@ -68,42 +68,42 @@ document.getElementById("page-13").innerHTML = `
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">邀請記錄</h3>
         <div style="display: grid; gap: 12px">
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; margin-right: 12px">
-            <div style="flex: 1">
-              <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">Alex Chen</div>
-              <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">@alex_lifestyle</div>
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; flex-shrink: 0">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b">Alex Chen</div>
+              <div style="font-size: 13px; color: #64748b">@alex_lifestyle</div>
               <div style="font-size: 12px; color: #10b981">已加入 • 2024-01-15</div>
             </div>
-            <div style="text-align: right">
-              <div style="font-size: 14px; font-weight: 700; color: #10b981">+NT$ 50</div>
-              <div style="font-size: 10px; color: #64748b">獎勵已發放</div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px; flex-shrink: 0">
+              <div style="font-size: 16px; font-weight: 700; color: #10b981">+NT$ 50</div>
+              <div style="padding: 2px 8px; background: #d1fae5; color: #059669; border-radius: 12px; font-size: 10px; font-weight: 600">獎勵已發放</div>
             </div>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; margin-right: 12px">
-            <div style="flex: 1">
-              <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">Sarah Wang</div>
-              <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">@sarah_beauty</div>
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; flex-shrink: 0">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b">Sarah Wang</div>
+              <div style="font-size: 13px; color: #64748b">@sarah_beauty</div>
               <div style="font-size: 12px; color: #10b981">已加入 • 2024-01-12</div>
             </div>
-            <div style="text-align: right">
-              <div style="font-size: 14px; font-weight: 700; color: #10b981">+NT$ 50</div>
-              <div style="font-size: 10px; color: #64748b">獎勵已發放</div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px; flex-shrink: 0">
+              <div style="font-size: 16px; font-weight: 700; color: #10b981">+NT$ 50</div>
+              <div style="padding: 2px 8px; background: #d1fae5; color: #059669; border-radius: 12px; font-size: 10px; font-weight: 600">獎勵已發放</div>
             </div>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; margin-right: 12px">
-            <div style="flex: 1">
-              <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">Mike Liu</div>
-              <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">@mike_tech</div>
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; flex-shrink: 0">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b">Mike Liu</div>
+              <div style="font-size: 13px; color: #64748b">@mike_tech</div>
               <div style="font-size: 12px; color: #f59e0b">待加入 • 2024-01-10</div>
             </div>
-            <div style="text-align: right">
-              <div style="font-size: 14px; font-weight: 700; color: #64748b">待發放</div>
-              <div style="font-size: 10px; color: #64748b">等待註冊</div>
+            <div style="display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 4px; flex-shrink: 0">
+              <div style="font-size: 16px; font-weight: 700; color: #94a3b8">待發放</div>
+              <div style="padding: 2px 8px; background: #fef3c7; color: #d97706; border-radius: 12px; font-size: 10px; font-weight: 600">等待註冊</div>
             </div>
           </div>
         </div>
