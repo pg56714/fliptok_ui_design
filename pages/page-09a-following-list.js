@@ -11,12 +11,19 @@ document.getElementById("page-09a").innerHTML = `
   </div>
 
   <div class="page-content">
-    <div class="header-bar">
-      <div class="header-title">我的關注</div>
-      <div class="header-subtitle">關注清單</div>
-    </div>
-
-    <div style="padding: 16px">
+    <div style="padding: 20px">
+      <!-- 標題區域 -->
+      <div style="position: relative; margin-bottom: 24px">
+        <button 
+          onclick="goToPage(9)" 
+          style="position: absolute; left: 0; top: 4px; background: white; border: 1.5px solid #e2e8f0; width: 36px; height: 36px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #64748b; cursor: pointer; transition: all 0.3s"
+          onmouseover="this.style.background='#f8fafc'; this.style.borderColor='#cbd5e1'"
+          onmouseout="this.style.background='white'; this.style.borderColor='#e2e8f0'"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <h2 style="font-size: 28px; font-weight: 800; color: #1e293b; padding-left: 48px">我的關注</h2>
+      </div>
       <!-- 統計資訊 -->
       <div style="background: #f8fafc; border-radius: 12px; padding: 16px; margin-bottom: 20px; display: flex; align-items: center; justify-content: space-between">
         <div>

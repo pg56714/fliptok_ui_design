@@ -32,10 +32,35 @@ document.getElementById("brand-08").innerHTML = `
             <input type="text" class="form-input" value="時尚潮牌 A">
           </div>
           <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 8px">品牌 Logo URL</label>
+            <input type="url" class="form-input" placeholder="https://example.com/logo.png" value="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=200&h=200&fit=crop">
+            <div style="font-size: 12px; color: #64748b; margin-top: 6px">建議尺寸：200x200px</div>
+          </div>
+          <div>
             <label style="display: block; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 8px">品牌簡介</label>
             <textarea class="form-input" rows="3">專注於時尚潮流的品牌...</textarea>
           </div>
-          <button class="btn btn-primary" onclick="alert('✅ 已儲存')">儲存變更</button>
+          <button class="btn btn-primary" onclick="alert('✅ 品牌資訊已儲存')">儲存變更</button>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom: 20px">
+        <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">修改密碼</h3>
+        <div style="display: grid; gap: 16px">
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 8px">目前密碼</label>
+            <input type="password" class="form-input" placeholder="輸入目前密碼">
+          </div>
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 8px">新密碼</label>
+            <input type="password" class="form-input" placeholder="輸入新密碼">
+            <div style="font-size: 12px; color: #64748b; margin-top: 6px">密碼長度至少 8 個字元</div>
+          </div>
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #334155; margin-bottom: 8px">確認新密碼</label>
+            <input type="password" class="form-input" placeholder="再次輸入新密碼">
+          </div>
+          <button class="btn btn-primary" onclick="alert('✅ 密碼已更新')">更新密碼</button>
         </div>
       </div>
 
