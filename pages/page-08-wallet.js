@@ -63,37 +63,37 @@ document.getElementById("page-08").innerHTML = `
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">收益來源</h3>
         <div style="display: grid; gap: 12px">
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #fef3c7; color: #f59e0b">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #fef3c7; color: #f59e0b; flex-shrink: 0">
               <i class="fas fa-video"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">內容創作獎勵</div>
               <div class="list-subtitle">發布優質內容獲得獎勵</div>
+              <div style="color: #10b981; font-size: 16px; font-weight: 700; margin-top: 4px">+NT$ 1,200</div>
             </div>
-            <div class="list-value" style="color: #10b981">+NT$ 1,200</div>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #e0f2fe; color: #0284c7">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #e0f2fe; color: #0284c7; flex-shrink: 0">
               <i class="fas fa-shopping-cart"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">銷售佣金</div>
               <div class="list-subtitle">透過內容促成商品銷售</div>
+              <div style="color: #10b981; font-size: 16px; font-weight: 700; margin-top: 4px">+NT$ 680</div>
             </div>
-            <div class="list-value" style="color: #10b981">+NT$ 680</div>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #f3e8ff; color: #8b5cf6">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #f3e8ff; color: #8b5cf6; flex-shrink: 0">
               <i class="fas fa-users"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">邀請獎勵</div>
               <div class="list-subtitle">成功邀請好友加入</div>
+              <div style="color: #10b981; font-size: 16px; font-weight: 700; margin-top: 4px">+NT$ 600</div>
             </div>
-            <div class="list-value" style="color: #10b981">+NT$ 600</div>
           </div>
         </div>
       </div>
@@ -102,37 +102,37 @@ document.getElementById("page-08").innerHTML = `
       <div class="card">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">最近交易</h3>
         <div style="display: grid; gap: 12px">
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #f0fdf4; color: #16a34a">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #f0fdf4; color: #16a34a; flex-shrink: 0">
               <i class="fas fa-plus"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">內容創作獎勵</div>
               <div class="list-subtitle">2024-01-15 14:30</div>
+              <div style="color: #10b981; font-size: 16px; font-weight: 700; margin-top: 4px">+NT$ 50</div>
             </div>
-            <div class="list-value" style="color: #10b981">+NT$ 50</div>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #f0fdf4; color: #16a34a">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #f0fdf4; color: #16a34a; flex-shrink: 0">
               <i class="fas fa-shopping-cart"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">銷售佣金</div>
               <div class="list-subtitle">2024-01-14 16:45</div>
+              <div style="color: #10b981; font-size: 16px; font-weight: 700; margin-top: 4px">+NT$ 120</div>
             </div>
-            <div class="list-value" style="color: #10b981">+NT$ 120</div>
           </div>
 
-          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0">
-            <div class="list-icon" style="background: #fef2f2; color: #dc2626">
+          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
+            <div class="list-icon" style="background: #fef2f2; color: #dc2626; flex-shrink: 0">
               <i class="fas fa-download"></i>
             </div>
-            <div class="list-content">
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
               <div class="list-title">提現到銀行</div>
               <div class="list-subtitle">2024-01-12 10:20</div>
+              <div style="color: #dc2626; font-size: 16px; font-weight: 700; margin-top: 4px">-NT$ 500</div>
             </div>
-            <div class="list-value" style="color: #dc2626">-NT$ 500</div>
           </div>
         </div>
       </div>
