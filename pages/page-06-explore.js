@@ -39,34 +39,34 @@ document.getElementById("page-06").innerHTML = `
       <div style="margin-bottom: 24px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 12px">推薦關注</h3>
         <div style="display: grid; gap: 12px">
-          <div class="list-item" style="background: white; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%236366f1'/><stop offset='1' stop-color='%238b5cf6'/></linearGradient></defs><circle cx='30' cy='30' r='30' fill='url(%23g)'/><circle cx='30' cy='24' r='10' fill='%23ffffff' fill-opacity='0.95'/><path d='M10 52a20 20 0 0140 0v2H10z' fill='%23ffffff' fill-opacity='0.95'/><circle cx='30' cy='24' r='8' fill='%23e0e7ff'/></svg>" alt="User" style="width: 48px; height: 48px; border-radius: 24px; margin-right: 12px; object-fit: cover; background:#e2e8f0">
+          <div style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 12px">
+            <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'><defs><linearGradient id='g' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%236366f1'/><stop offset='1' stop-color='%238b5cf6'/></linearGradient></defs><circle cx='30' cy='30' r='30' fill='url(%23g)'/><circle cx='30' cy='24' r='10' fill='%23ffffff' fill-opacity='0.95'/><path d='M10 52a20 20 0 0140 0v2H10z' fill='%23ffffff' fill-opacity='0.95'/><circle cx='30' cy='24' r='8' fill='%23e0e7ff'/></svg>" alt="User" style="width: 48px; height: 48px; border-radius: 24px; object-fit: cover; background:#e2e8f0">
             <div style="flex: 1">
-              <div style="font-size: 15px; font-weight: 600; color: #1e293b; margin-bottom: 2px">@emily_fashion</div>
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">@emily_fashion</div>
               <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">時尚穿搭達人 • 12.5k 粉絲</div>
-              <div style="font-size: 12px; color: #6366f1">時尚潮牌 A 大使</div>
+              <div style="font-size: 12px; color: #6366f1; font-weight: 600">大使 · 時尚潮牌 A</div>
             </div>
-            <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600">關注</button>
+            <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; flex-shrink: 0">關注</button>
           </div>
 
-          <div class="list-item" style="background: white; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; margin-right: 12px" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='">
+          <div style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 12px">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; object-fit: cover" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='">
             <div style="flex: 1">
-              <div style="font-size: 15px; font-weight: 600; color: #1e293b; margin-bottom: 2px">@sarah_beauty</div>
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">@sarah_beauty</div>
               <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">美妝達人 • 8.2k 粉絲</div>
-              <div style="font-size: 12px; color: #6366f1">精品美妝 B 大使</div>
+              <div style="font-size: 12px; color: #6366f1; font-weight: 600">大使 · 精品美妝 B</div>
             </div>
-            <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600">關注</button>
+            <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; flex-shrink: 0">關注</button>
           </div>
 
-          <div class="list-item" style="background: white; border-radius: 12px; padding: 16px; margin: 0">
-            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; margin-right: 12px" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='">
+          <div style="background: white; border-radius: 12px; padding: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); display: flex; align-items: center; gap: 12px">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop" alt="User" style="width: 48px; height: 48px; border-radius: 24px; object-fit: cover" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='">
             <div style="flex: 1">
-              <div style="font-size: 15px; font-weight: 600; color: #1e293b; margin-bottom: 2px">@alex_lifestyle</div>
+              <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">@alex_lifestyle</div>
               <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">生活達人 • 15.3k 粉絲</div>
-              <div style="font-size: 12px; color: #6366f1">生活居家 C 大使</div>
+              <div style="font-size: 12px; color: #6366f1; font-weight: 600">大使 · 生活居家 C</div>
             </div>
-            <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600">關注</button>
+            <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; flex-shrink: 0">關注</button>
           </div>
         </div>
       </div>

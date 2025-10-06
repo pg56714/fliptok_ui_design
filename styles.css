@@ -212,6 +212,8 @@ body {
 .list-item {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap; /* 保障 icon 與文字同排不折行 */
+  gap: 12px; /* 統一左右間距 */
   padding: 16px;
   border-bottom: 1px solid #f1f5f9;
 }
@@ -228,12 +230,14 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  margin-right: 12px;
   flex-shrink: 0;
 }
 
 .list-content {
   flex: 1;
+  min-width: 0; /* 防止內容換行到圖示下方，確保水平排列 */
+  display: flex;
+  flex-direction: column;
 }
 
 .list-title {
@@ -252,6 +256,25 @@ body {
   font-size: 15px;
   font-weight: 700;
   color: #1e293b;
+}
+
+/* 保證任何直接置於 list-item 內的縮圖/頭像 置左且與文字留白 */
+.list-item > img {
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+/* 右側附加區（如金額、狀態、箭頭、按鈕）統一靠右 */
+.list-item .list-right,
+.list-item .list-value,
+.list-item > i:last-child {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* 若最後元素是按鈕，也自動靠右 */
+.list-item button:last-child {
+  margin-left: auto;
 }
 
 .btn {

@@ -44,7 +44,7 @@ document.getElementById("page-04").innerHTML = `
       <div style="position: absolute; bottom: 120px; left: 20px; right: 80px; z-index: 10">
         <div style="margin-bottom: 12px">
           <span style="color: white; font-size: 16px; font-weight: 700; margin-right: 8px">@emily_fashion</span>
-          <span class="badge badge-primary" style="font-size: 10px; padding: 2px 6px">大使</span>
+          <span class="badge badge-primary" style="font-size: 10px; padding: 2px 6px">大使 · 時尚潮牌 A</span>
         </div>
         <p style="color: white; font-size: 14px; line-height: 1.5; margin-bottom: 8px">今天的新穿搭！這件外套真的太好看了，質感超棒 ✨ #時尚 #穿搭 #外套</p>
         <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px">
@@ -83,7 +83,7 @@ document.getElementById("page-04").innerHTML = `
           <button style="background:none;border:none;color:white;display:flex;flex-direction:column;align-items:center;gap:4px"><i class="fas fa-comment" style="font-size:28px"></i><span style="font-size:12px;font-weight:600">156</span></button>
         </div>
         <div style="position:absolute;bottom:120px;left:20px;right:80px;z-index:10;color:white">
-          <div style="margin-bottom:12px"><span style="font-size:16px;font-weight:700;margin-right:8px">@sarah_beauty</span><span class="badge badge-primary" style="font-size:10px;padding:2px 6px">大使</span></div>
+          <div style="margin-bottom:12px"><span style="font-size:16px;font-weight:700;margin-right:8px">@sarah_beauty</span><span class="badge badge-primary" style="font-size:10px;padding:2px 6px">大使 · 精品美妝 B</span></div>
           <p style="font-size:14px;line-height:1.5;margin-bottom:8px">5分鐘完成日常妝容 💄 #美妝</p>
         </div>
       </div>
@@ -91,7 +91,7 @@ document.getElementById("page-04").innerHTML = `
       <!-- item 3 -->
       <div class="tiktok-item" style="background:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=1600&fit=crop') center/cover">
         <div style="position:absolute;bottom:120px;left:20px;right:80px;z-index:10;color:white">
-          <div style="margin-bottom:12px"><span style="font-size:16px;font-weight:700;margin-right:8px">@alex_lifestyle</span><span class="badge badge-primary" style="font-size:10px;padding:2px 6px">大使</span></div>
+          <div style="margin-bottom:12px"><span style="font-size:16px;font-weight:700;margin-right:8px">@alex_lifestyle</span><span class="badge badge-primary" style="font-size:10px;padding:2px 6px">大使 · 生活居家 C</span></div>
           <p style="font-size:14px;line-height:1.5;margin-bottom:8px">居家佈置靈感 ✨ #居家 #設計</p>
         </div>
       </div>

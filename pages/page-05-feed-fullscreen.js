@@ -24,7 +24,7 @@ document.getElementById("page-05").innerHTML = `
           <div style="flex:1">
             <div style="font-size:18px; font-weight:800; color:#1e293b; margin-bottom:2px">Emily Chen</div>
             <div style="font-size:13px; color:#64748b; margin-bottom:4px">時尚穿搭達人 • 12.5k 粉絲</div>
-            <span class="badge badge-primary"><i class="fas fa-crown" style="font-size:10px"></i> 大使</span>
+            <span class="badge badge-primary"><i class="fas fa-crown" style="font-size:10px"></i> 大使 · 時尚潮牌 A</span>
           </div>
           <button class="btn btn-primary" style="width:auto">關注</button>
         </div>

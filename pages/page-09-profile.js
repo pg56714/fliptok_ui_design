@@ -27,11 +27,7 @@ document.getElementById("page-09").innerHTML = `
             <div style="display: flex; gap: 8px">
               <span class="badge badge-primary">
                 <i class="fas fa-crown" style="font-size: 10px"></i>
-                大使
-              </span>
-              <span class="badge badge-success">
-                <i class="fas fa-check" style="font-size: 10px"></i>
-                已驗證
+                大使 · 時尚潮牌 A
               </span>
             </div>
           </div>
@@ -58,36 +54,42 @@ document.getElementById("page-09").innerHTML = `
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 12px">功能快捷入口</h3>
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px">
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(10)">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #eef2ff; color: #6366f1">
-              <i class="fas fa-id-badge"></i>
-            </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">大使認證</div>
-          </div>
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(11)">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #f0fdf4; color: #16a34a">
-              <i class="fas fa-chart-line"></i>
-            </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">數據分析</div>
-          </div>
           <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(12)">
             <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
               <i class="fas fa-shopping-cart"></i>
             </div>
             <div style="font-size: 12px; font-weight: 700; color: #334155">購物</div>
           </div>
-          
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(14)">
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage('09a')">
+            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #dbeafe; color: #2563eb">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155">我的關注</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(13)">
             <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #f3e8ff; color: #8b5cf6">
               <i class="fas fa-user-friends"></i>
             </div>
             <div style="font-size: 12px; font-weight: 700; color: #334155">邀請好友</div>
           </div>
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(15)">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fee2e2; color: #dc2626">
-              <i class="fas fa-building"></i>
+          
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(10)">
+            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
+              <i class="fas fa-crown"></i>
             </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">品牌後台</div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155">大使功能</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage('10a')">
+            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
+              <i class="fas fa-comments"></i>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155">品牌聊天</div>
+          </div>
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(11)">
+            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #f0fdf4; color: #16a34a">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155">數據分析</div>
           </div>
         </div>
       </div>
@@ -116,6 +118,28 @@ document.getElementById("page-09").innerHTML = `
             <div class="list-content">
               <div class="list-title">編輯個人資料</div>
               <div class="list-subtitle">修改頭像、暱稱和簡介</div>
+            </div>
+            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
+          </div>
+
+          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="goToPage('09a')">
+            <div class="list-icon" style="background: #dbeafe; color: #2563eb">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="list-content">
+              <div class="list-title">我的關注</div>
+              <div class="list-subtitle">管理追蹤的品牌與大使</div>
+            </div>
+            <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
+          </div>
+
+          <div class="list-item" style="background: #f8fafc; border-radius: 12px; padding: 16px; margin: 0; cursor: pointer" onclick="goToPage('09b')">
+            <div class="list-icon" style="background: #fce7f3; color: #ec4899">
+              <i class="fas fa-clipboard-list"></i>
+            </div>
+            <div class="list-content">
+              <div class="list-title">用戶調查</div>
+              <div class="list-subtitle">填寫問卷送購物金</div>
             </div>
             <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
           </div>
