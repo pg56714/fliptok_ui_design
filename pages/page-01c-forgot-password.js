@@ -12,16 +12,6 @@ document.getElementById("page-01c").innerHTML = `
 
   <div class="page-content" style="bottom: 0">
     <div style="padding: 40px 24px; min-height: 100%; display: flex; flex-direction: column; justify-content: center">
-      <!-- 返回按鈕 -->
-      <button 
-        onclick="goToPage('01')" 
-        style="position: absolute; top: 60px; left: 24px; background: white; border: 1.5px solid #e2e8f0; width: 40px; height: 40px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #64748b; cursor: pointer; transition: all 0.3s"
-        onmouseover="this.style.background='#f8fafc'; this.style.borderColor='#cbd5e1'"
-        onmouseout="this.style.background='white'; this.style.borderColor='#e2e8f0'"
-      >
-        <i class="fas fa-arrow-left"></i>
-      </button>
-
       <!-- Icon 與標題 -->
       <div style="text-align: center; margin-bottom: 40px">
         <div style="width: 80px; height: 80px; margin: 0 auto 20px; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 40px; color: white; box-shadow: 0 8px 24px rgba(99,102,241,0.3)">

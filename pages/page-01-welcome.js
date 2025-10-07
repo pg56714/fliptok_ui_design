@@ -11,14 +11,24 @@ document.getElementById("page-01").innerHTML = `
   </div>
 
   <div class="page-content" style="bottom: 0">
+    <!-- 跳過按鈕 -->
+    <button 
+      onclick="goToPage(4)" 
+      style="position: absolute; top: 20px; right: 20px; z-index: 100; background: rgba(255,255,255,0.9); backdrop-filter: blur(10px); border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 8px 20px; font-size: 14px; font-weight: 600; color: #64748b; cursor: pointer; transition: all 0.3s; box-shadow: 0 2px 8px rgba(0,0,0,0.05)"
+      onmouseover="this.style.background='white'; this.style.color='#6366f1'; this.style.borderColor='#6366f1'"
+      onmouseout="this.style.background='rgba(255,255,255,0.9)'; this.style.color='#64748b'; this.style.borderColor='#e2e8f0'"
+    >
+      跳過
+    </button>
+
     <div style="padding: 40px 24px; min-height: 100%; display: flex; flex-direction: column; justify-content: center">
       <!-- Logo 與標題 -->
       <div style="text-align: center; margin-bottom: 40px">
         <div style="width: 80px; height: 80px; margin: 0 auto 20px; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); border-radius: 24px; display: flex; align-items: center; justify-content: center; font-size: 40px; color: white; box-shadow: 0 8px 24px rgba(99,102,241,0.3)">
           <i class="fas fa-crown"></i>
         </div>
-        <p style="font-size: 14px; color: #94a3b8; margin-bottom: 8px">請輸入你的資料</p>
-        <h1 style="font-size: 32px; font-weight: 800; color: #1e293b; margin-bottom: 0">歡迎回來</h1>
+        <p style="font-size: 14px; color: #94a3b8; margin-bottom: 8px">歡迎回來</p>
+        <h1 style="font-size: 32px; font-weight: 800; color: #1e293b; margin-bottom: 0">FlipTok</h1>
       </div>
 
       <!-- 表單 -->

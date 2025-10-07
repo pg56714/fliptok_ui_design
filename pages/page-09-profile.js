@@ -20,7 +20,13 @@ document.getElementById("page-09").innerHTML = `
       <!-- 個人資訊卡片 -->
       <div class="card" style="margin-bottom: 20px">
         <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px">
-          <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&h=80&fit=crop'" alt="Profile" style="width: 64px; height: 64px; border-radius: 32px; border: 3px solid #6366f1; object-fit: cover; background:#f1f5f9">
+          <div style="position: relative; cursor: pointer" onclick="goToPage('09c')" title="點擊編輯個人資料">
+            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=80&h=80&fit=crop" onerror="this.src='https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&h=80&fit=crop'" alt="Profile" style="width: 64px; height: 64px; border-radius: 32px; border: 3px solid #6366f1; object-fit: cover; background:#f1f5f9; transition: all 0.3s" onmouseover="this.style.opacity='0.8'; this.style.transform='scale(1.05)'" onmouseout="this.style.opacity='1'; this.style.transform='scale(1)'">
+            <!-- 編輯提示圖示 -->
+            <div style="position: absolute; bottom: -2px; right: -2px; width: 22px; height: 22px; background: #6366f1; border: 2px solid white; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 6px rgba(0,0,0,0.2)">
+              <i class="fas fa-pen" style="font-size: 9px; color: white"></i>
+            </div>
+          </div>
           <div style="flex: 1">
             <h2 style="font-size: 20px; font-weight: 800; color: #1e293b; margin-bottom: 4px">Emily Chen</h2>
             <p style="font-size: 14px; color: #64748b; margin-bottom: 8px">@emily_fashion</p>
@@ -31,7 +37,6 @@ document.getElementById("page-09").innerHTML = `
               </span>
             </div>
           </div>
-          
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; text-align: center">
