@@ -11,12 +11,23 @@ document.getElementById("page-08").innerHTML = `
   </div>
 
   <div class="page-content">
-    <div class="header-bar">
-      <div class="header-title">大使錢包</div>
-      <div class="header-subtitle">你的收益與獎勵</div>
-    </div>
+    <div style="padding: 20px">
+      <!-- 標題區域 -->
+      <div style="position: relative; margin-bottom: 24px">
+        <button 
+          onclick="goToPage(10)" 
+          style="position: absolute; left: 0; top: 4px; background: white; border: 1.5px solid #e2e8f0; width: 36px; height: 36px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #64748b; cursor: pointer; transition: all 0.3s"
+          onmouseover="this.style.background='#f8fafc'; this.style.borderColor='#cbd5e1'"
+          onmouseout="this.style.background='white'; this.style.borderColor='#e2e8f0'"
+        >
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <div style="padding-left: 48px">
+          <h2 style="font-size: 28px; font-weight: 800; color: #1e293b">大使錢包</h2>
+          <p style="font-size: 14px; color: #64748b; margin-top: 4px">你的收益與獎勵</p>
+        </div>
+      </div>
 
-    <div style="padding: 16px">
       <!-- 總收益卡片 -->
       <div class="card card-gradient" style="margin-bottom: 20px">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px">
@@ -140,23 +151,19 @@ document.getElementById("page-08").innerHTML = `
   </div>
 
   <div class="tab-bar">
-    <div class="tab-item">
+    <div class="tab-item" onclick="goToPage(4)">
       <i class="fas fa-home tab-icon"></i>
       <span class="tab-label">首頁</span>
     </div>
-    <div class="tab-item">
+    <div class="tab-item" onclick="goToPage(6)">
       <i class="fas fa-compass tab-icon"></i>
       <span class="tab-label">探索</span>
     </div>
-    <div class="tab-item">
+    <div class="tab-item" onclick="goToPage(7)">
       <i class="fas fa-plus-circle tab-icon"></i>
       <span class="tab-label">創作</span>
     </div>
     <div class="tab-item active">
-      <i class="fas fa-wallet tab-icon"></i>
-      <span class="tab-label">錢包</span>
-    </div>
-    <div class="tab-item">
       <i class="fas fa-user tab-icon"></i>
       <span class="tab-label">我的</span>
     </div>

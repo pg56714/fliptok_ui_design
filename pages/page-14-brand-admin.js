@@ -37,8 +37,11 @@ document.getElementById("page-14").innerHTML = `
               <div style="font-size: 12px; color:#64748b; white-space: nowrap; overflow: hidden; text-overflow: ellipsis">856 位大使 • 已加入</div>
             </div>
             <div style="display:flex; gap:8px; justify-content:flex-end; flex-wrap:wrap">
-              <button class="btn" style="padding:6px 12px; font-size:12px" onclick="goToPage(15)">
+              <button class="btn" style="padding:6px 12px; font-size:12px; background:#8b5cf6; color:white; border:none" onclick="goToPage(15)">
                 <i class="fas fa-trophy" style="margin-right:6px"></i>品牌排行
+              </button>
+              <button class="btn" style="padding:6px 12px; font-size:12px; background:#f59e0b; color:white; border:none" onclick="goToPage(10)">
+                <i class="fas fa-crown" style="margin-right:6px"></i>大使認證
               </button>
               <button class="btn btn-primary" style="padding:6px 12px; font-size:12px" onclick="goToPage(17)">進入品牌</button>
             </div>
@@ -63,10 +66,6 @@ document.getElementById("page-14").innerHTML = `
     <div class="tab-item">
       <i class="fas fa-plus-circle tab-icon"></i>
       <span class="tab-label">創作</span>
-    </div>
-    <div class="tab-item">
-      <i class="fas fa-wallet tab-icon"></i>
-      <span class="tab-label">錢包</span>
     </div>
     <div class="tab-item active">
       <i class="fas fa-user tab-icon"></i>

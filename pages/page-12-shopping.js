@@ -160,10 +160,6 @@ document.getElementById("page-12").innerHTML = `
       <i class="fas fa-plus-circle tab-icon"></i>
       <span class="tab-label">創作</span>
     </div>
-    <div class="tab-item">
-      <i class="fas fa-wallet tab-icon"></i>
-      <span class="tab-label">錢包</span>
-    </div>
     <div class="tab-item active">
       <i class="fas fa-user tab-icon"></i>
       <span class="tab-label">我的</span>

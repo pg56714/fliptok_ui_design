@@ -103,17 +103,17 @@ document.getElementById("page-09b").innerHTML = `
       <div style="background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); border-radius: 16px; padding: 20px; margin-bottom: 24px; color: white">
         <div style="display: flex; align-items: center; gap: 12px">
           <div style="width: 48px; height: 48px; background: rgba(255,255,255,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
-            <i class="fas fa-gift" style="font-size: 24px"></i>
+            <i class="fas fa-lightbulb" style="font-size: 24px"></i>
           </div>
           <div>
-            <div style="font-weight: 700; margin-bottom: 4px">完成問卷送好禮！</div>
-            <div style="font-size: 13px; opacity: 0.9">填完問卷即贈送 $100 購物金</div>
+            <div style="font-weight: 700; margin-bottom: 4px">你的意見很重要！</div>
+            <div style="font-size: 13px; opacity: 0.9">幫助我們打造更好的 FlipTok 體驗</div>
           </div>
         </div>
       </div>
 
       <!-- 提交按鈕 -->
-      <button class="btn btn-primary" onclick="alert('感謝你的回饋！已獲得 $100 購物金'); goToPage(9)">
+      <button class="btn btn-primary" onclick="alert('感謝你的寶貴意見！'); goToPage(9)">
         提交問卷
       </button>
       <button class="btn btn-outline" style="margin-top: 12px" onclick="goToPage(9)">
@@ -134,10 +134,6 @@ document.getElementById("page-09b").innerHTML = `
     <div class="tab-item" onclick="goToPage(7)">
       <i class="fas fa-plus-circle tab-icon"></i>
       <span class="tab-label">創作</span>
-    </div>
-    <div class="tab-item" onclick="goToPage(8)">
-      <i class="fas fa-wallet tab-icon"></i>
-      <span class="tab-label">錢包</span>
     </div>
     <div class="tab-item active">
       <i class="fas fa-user tab-icon"></i>
