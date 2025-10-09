@@ -1,5 +1,5 @@
-// Admin 07: 內容審核
-document.getElementById("admin-05").innerHTML = `
+// Admin 06: 內容審核
+document.getElementById("admin-06").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>

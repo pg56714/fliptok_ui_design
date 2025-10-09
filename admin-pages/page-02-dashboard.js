@@ -48,11 +48,16 @@ document.getElementById("admin-01").innerHTML = `
           <i class="fas fa-chart-line" style="font-size: 24px"></i>
           <span style="font-size: 13px">收益報表</span>
         </button>
-        <button class="btn" style="background: white; border: 1.5px solid #4facfe; color: #4facfe; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 8px" onclick="goToPage(5)">
+        <button class="btn" style="background: white; border: 1.5px solid #10b981; color: #10b981; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 8px; position: relative" onclick="goToPage(5)">
+          <div style="position: absolute; top: 8px; right: 8px; background: #ef4444; color: white; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 10px">12</div>
+          <i class="fas fa-money-check-alt" style="font-size: 24px"></i>
+          <span style="font-size: 13px">財務結算</span>
+        </button>
+        <button class="btn" style="background: white; border: 1.5px solid #4facfe; color: #4facfe; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 8px" onclick="goToPage(6)">
           <i class="fas fa-shield-alt" style="font-size: 24px"></i>
           <span style="font-size: 13px">內容審核</span>
         </button>
-        <button class="btn" style="background: white; border: 1.5px solid #4facfe; color: #4facfe; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 8px" onclick="goToPage(6)">
+        <button class="btn" style="background: white; border: 1.5px solid #4facfe; color: #4facfe; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 8px" onclick="goToPage(7)">
           <i class="fas fa-cog" style="font-size: 24px"></i>
           <span style="font-size: 13px">系統設定</span>
         </button>

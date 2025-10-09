@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
       pageCount = 10; // 品牌後台共 10 頁
     } else if (document.getElementById("admin-01")) {
       pagePrefix = "admin";
-      pageCount = 6; // 管理後台共 6 頁
+      pageCount = 7; // 管理後台共 7 頁
     }
 
     const ids = Array.from(

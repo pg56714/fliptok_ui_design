@@ -1,5 +1,5 @@
-// Admin 08: 系統設定
-document.getElementById("admin-06").innerHTML = `
+// Admin 07: 系統設定
+document.getElementById("admin-07").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
     <div class="status-time">9:41</div>
