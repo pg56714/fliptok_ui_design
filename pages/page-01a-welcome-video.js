@@ -40,7 +40,7 @@ document.getElementById("page-01a").innerHTML = `
           </div>
           <div style="color: white">
             <div style="font-weight: 700; margin-bottom: 2px">購物輕鬆簡單</div>
-            <div style="font-size: 13px; opacity: 0.8">一鍵加入購物車或立即購買</div>
+            <div style="font-size: 13px; opacity: 0.8">一鍵立即購買</div>
           </div>
         </div>
 

@@ -12,7 +12,7 @@ document.getElementById("page-02b").innerHTML = `
 
   <div class="page-content" style="bottom: 0">
     <div style="padding: 20px">
-      <button class="btn-icon" style="position: absolute; top: 60px; left: 20px; z-index: 10" onclick="goToPage('02a')">
+      <button class="btn-icon" style="position: absolute; top: 60px; left: 20px; z-index: 10" onclick="goToPage(9)">
         <i class="fas fa-arrow-left"></i>
       </button>
 
@@ -21,7 +21,7 @@ document.getElementById("page-02b").innerHTML = `
           <i class="fas fa-credit-card" style="font-size: 36px; color: white"></i>
         </div>
         <h2 style="font-size: 26px; font-weight: 800; color: #1e293b; margin-bottom: 8px">綁定付款方式</h2>
-        <p style="font-size: 14px; color: #64748b">安全加密，支援快速結帳</p>
+        <p style="font-size: 14px; color: #64748b">安全加密，支援快速結帳與訂閱服務</p>
       </div>
 
       <!-- 信用卡表單 -->
@@ -57,20 +57,22 @@ document.getElementById("page-02b").innerHTML = `
         </div>
       </div>
 
-      <!-- 付款資訊 -->
+      <!-- 綁定用途說明 -->
       <div style="background: #f8fafc; border-radius: 16px; padding: 20px; margin-bottom: 24px">
-        <div style="display: flex; justify-content: space-between; margin-bottom: 12px">
-          <span style="font-size: 14px; color: #64748b">年付方案</span>
-          <span style="font-size: 14px; font-weight: 600; color: #1e293b">$1,999</span>
-        </div>
-        <div style="display: flex; justify-content: space-between; margin-bottom: 12px">
-          <span style="font-size: 14px; color: #64748b">優惠折扣</span>
-          <span style="font-size: 14px; font-weight: 600; color: #10b981">-$200</span>
-        </div>
-        <div style="height: 1px; background: #e2e8f0; margin: 16px 0"></div>
-        <div style="display: flex; justify-content: space-between">
-          <span style="font-size: 16px; font-weight: 700; color: #1e293b">總計</span>
-          <span style="font-size: 20px; font-weight: 800; color: #6366f1">$1,799</span>
+        <div style="font-size: 14px; font-weight: 700; color: #1e293b; margin-bottom: 16px">綁定後可使用於</div>
+        <div style="display: grid; gap: 12px">
+          <div style="display: flex; align-items: center; gap: 12px">
+            <i class="fas fa-check-circle" style="color: #10b981; font-size: 20px"></i>
+            <span style="font-size: 14px; color: #64748b">快速結帳購物</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px">
+            <i class="fas fa-check-circle" style="color: #10b981; font-size: 20px"></i>
+            <span style="font-size: 14px; color: #64748b">訂閱會員服務</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px">
+            <i class="fas fa-check-circle" style="color: #10b981; font-size: 20px"></i>
+            <span style="font-size: 14px; color: #64748b">自動扣款續訂</span>
+          </div>
         </div>
       </div>
 
@@ -83,10 +85,14 @@ document.getElementById("page-02b").innerHTML = `
         </div>
       </div>
 
-      <!-- 確認付款按鈕 -->
-      <button class="btn btn-primary" onclick="alert('付款成功！'); goToPage(4)">
-        <i class="fas fa-lock" style="margin-right: 8px"></i>
-        確認付款 $1,799
+      <!-- 確認綁定按鈕 -->
+      <button class="btn btn-primary" onclick="alert('信用卡綁定成功！'); goToPage(4)">
+        <i class="fas fa-check" style="margin-right: 8px"></i>
+        確認綁定
+      </button>
+      
+      <button class="btn btn-outline" style="margin-top: 12px" onclick="goToPage(4)">
+        稍後再說
       </button>
     </div>
   </div>

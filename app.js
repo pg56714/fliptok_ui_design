@@ -15,7 +15,10 @@ window.addEventListener("DOMContentLoaded", () => {
     const ids = Array.from(
       { length: pageCount },
       (_, i) => `${pagePrefix}-${String(i + 1).padStart(2, "0")}`
-    );
+    ).filter((id) => {
+      // 排除已刪除的頁面（購物車功能已移除）
+      return id !== "page-12";
+    });
     const missing = ids.filter((id) => {
       const el = document.getElementById(id);
       return !el || el.innerHTML.trim() === "";

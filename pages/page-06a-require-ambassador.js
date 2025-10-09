@@ -35,8 +35,8 @@ document.getElementById("page-06a").innerHTML = `
       <div style="color: white; margin-bottom: 40px">
         <h1 style="font-size: 32px; font-weight: 800; margin-bottom: 16px">僅限品牌大使使用</h1>
         <p style="font-size: 16px; opacity: 0.95; line-height: 1.8; max-width: 300px; margin: 0 auto">
-          創作功能專為品牌大使開放<br>
-          升級為大使後即可開始創作內容並賺取收益
+          購買商品後即可成為品牌大使<br>
+          開始創作內容並賺取收益
         </p>
       </div>
 
@@ -93,11 +93,15 @@ document.getElementById("page-06a").innerHTML = `
       <button 
         class="btn btn-primary" 
         style="width: 100%; background: white; color: #f59e0b; font-size: 18px; font-weight: 800; padding: 18px; margin-bottom: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.2)"
-        onclick="goToPage('02a')"
+        onclick="goToPage(6)"
       >
-        <i class="fas fa-crown" style="margin-right: 8px"></i>
-        立即升級為大使
+        <i class="fas fa-shopping-bag" style="margin-right: 8px"></i>
+        前往購物解鎖大使
       </button>
+      
+      <p style="font-size: 13px; color: rgba(255,255,255,0.8); text-align: center">
+        購買任一商品後即可解鎖大使功能
+      </p>
     </div>
   </div>
 </div>

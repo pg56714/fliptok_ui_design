@@ -47,12 +47,22 @@ document.getElementById("brand-09").innerHTML = `
           <div style="font-size: 28px; font-weight: 900; color: #7f1d1d; margin-bottom: 4px">2</div>
           <div style="font-size: 11px; color: #991b1b">需要處理</div>
         </div>
+        <div class="card" style="text-align: center; padding: 20px; background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%)">
+          <div style="font-size: 12px; color: #475569; margin-bottom: 8px; font-weight: 600">已取消</div>
+          <div style="font-size: 28px; font-weight: 900; color: #475569; margin-bottom: 4px">3</div>
+          <div style="font-size: 11px; color: #64748b">本週取消</div>
+        </div>
+        <div class="card" style="text-align: center; padding: 20px; background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%)">
+          <div style="font-size: 12px; color: #78350f; margin-bottom: 8px; font-weight: 600">總訂單</div>
+          <div style="font-size: 28px; font-weight: 900; color: #78350f; margin-bottom: 4px">81</div>
+          <div style="font-size: 11px; color: #92400e">本月累計</div>
+        </div>
       </div>
 
       <!-- 訂單狀態篩選 -->
       <div style="display: flex; gap: 8px; margin-bottom: 20px; overflow-x: auto; padding-bottom: 4px">
         <button class="badge" style="padding: 10px 16px; background: #f5576c; color: white; border: none; cursor: pointer; white-space: nowrap; font-weight: 600">
-          全部 (78)
+          全部 (81)
         </button>
         <button class="badge" style="padding: 10px 16px; background: white; color: #64748b; border: 1.5px solid #e2e8f0; cursor: pointer; white-space: nowrap">
           待出貨 (8)
@@ -65,6 +75,9 @@ document.getElementById("brand-09").innerHTML = `
         </button>
         <button class="badge" style="padding: 10px 16px; background: white; color: #64748b; border: 1.5px solid #e2e8f0; cursor: pointer; white-space: nowrap">
           退款/退貨 (2)
+        </button>
+        <button class="badge" style="padding: 10px 16px; background: white; color: #64748b; border: 1.5px solid #e2e8f0; cursor: pointer; white-space: nowrap">
+          已取消 (3)
         </button>
       </div>
 
@@ -298,7 +311,70 @@ document.getElementById("brand-09").innerHTML = `
           </div>
         </div>
 
-        <!-- 訂單 5: 退款申請 -->
+        <!-- 訂單 5: 已取消 -->
+        <div class="card" style="padding: 0; overflow: hidden; opacity: 0.75">
+          <div style="padding: 16px; background: #f1f5f9; border-bottom: 1px solid #e2e8f0">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px">
+              <div>
+                <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">訂單編號</div>
+                <div style="font-size: 16px; font-weight: 800; color: #1e293b">FT202401110006</div>
+              </div>
+              <span class="badge" style="background: #64748b; color: white; font-size: 12px; padding: 8px 12px">
+                <i class="fas fa-ban" style="font-size: 10px; margin-right: 4px"></i>已取消
+              </span>
+            </div>
+            <div style="font-size: 12px; color: #64748b">
+              <i class="fas fa-user" style="margin-right: 6px"></i>客戶: Jenny Wu (@jenny_sports)
+            </div>
+          </div>
+          
+          <div style="padding: 16px">
+            <div style="display: flex; gap: 12px; margin-bottom: 12px">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=60&h=60&fit=crop" alt="Product" style="width: 60px; height: 60px; border-radius: 10px; object-fit: cover">
+              <div style="flex: 1">
+                <h3 style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 4px">瑜珈墊組合</h3>
+                <p style="font-size: 12px; color: #64748b; margin-bottom: 6px">粉色 · x1</p>
+                <div style="font-size: 16px; font-weight: 800; color: #64748b; text-decoration: line-through">NT$ 1,280</div>
+              </div>
+            </div>
+
+            <div style="padding: 12px; background: #f8fafc; border-radius: 12px; border: 1px solid #e2e8f0; margin-bottom: 12px">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px">
+                <i class="fas fa-info-circle" style="color: #64748b; font-size: 14px"></i>
+                <span style="font-size: 13px; font-weight: 700; color: #475569">取消原因</span>
+              </div>
+              <div style="font-size: 12px; color: #64748b; line-height: 1.5">
+                客戶主動取消 - 買錯尺寸，已重新下單
+              </div>
+              <div style="font-size: 11px; color: #94a3b8; margin-top: 6px">
+                取消時間：2024-01-11 10:25
+              </div>
+            </div>
+
+            <div style="height: 1px; background: #e2e8f0; margin: 12px 0"></div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px">
+              <span style="font-size: 13px; color: #64748b">訂單時間</span>
+              <span style="font-size: 13px; font-weight: 600; color: #1e293b">2024-01-11 09:45</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px">
+              <span style="font-size: 13px; color: #64748b">退款金額</span>
+              <span style="font-size: 18px; font-weight: 800; color: #64748b">NT$ 1,280</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px">
+              <button class="btn btn-outline" style="padding: 10px; font-size: 13px" onclick="alert('訂單詳情\\n\\n訂單編號：FT202401110006\\n商品：瑜珈墊組合\\n金額：NT$ 1,280\\n狀態：已取消\\n\\n退款已於 2024-01-11 處理完成')">
+                <i class="fas fa-info-circle" style="margin-right: 6px"></i>詳情
+              </button>
+              <button class="btn" style="padding: 10px; background: white; border: 1.5px solid #e2e8f0; color: #64748b; font-size: 13px" onclick="document.getElementById('chat-modal-6').style.display='flex'">
+                <i class="fas fa-comments" style="margin-right: 6px"></i>聊天
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 訂單 6: 退款申請 -->
         <div class="card" style="padding: 0; overflow: hidden; border: 2px solid #ef4444">
           <div style="padding: 16px; background: #fee2e2; border-bottom: 1px solid #fecaca">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px">
@@ -519,6 +595,63 @@ document.getElementById("brand-09").innerHTML = `
               <div style="font-size: 14px; line-height: 1.5">非常感謝您的支持與好評！🎉 期待您下次再來光臨！</div>
             </div>
             <div style="font-size: 11px; color: #94a3b8; margin-top: 4px; padding-right: 4px">昨天 19:00</div>
+          </div>
+        </div>
+      </div>
+      <div style="padding: 16px; border-top: 1px solid #e2e8f0">
+        <div style="display: flex; gap: 8px">
+          <input type="text" placeholder="輸入訊息..." style="flex: 1; padding: 12px 16px; border: 1.5px solid #e2e8f0; border-radius: 24px; font-size: 14px; outline: none" onkeypress="if(event.key==='Enter') alert('訊息已發送')">
+          <button style="width: 44px; height: 44px; border-radius: 22px; border: none; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; cursor: pointer; display: flex; align-items: center; justify-content: center" onclick="alert('訊息已發送')">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 客服聊天模態框 6 - Jenny Wu (已取消) -->
+  <div id="chat-modal-6" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center" onclick="if(event.target === this) this.style.display='none'">
+    <div style="background: white; border-radius: 24px; margin: 20px; max-width: 420px; width: 100%; height: 600px; max-height: 85vh; box-shadow: 0 20px 60px rgba(0,0,0,0.3); display: flex; flex-direction: column" onclick="event.stopPropagation()">
+      <div style="padding: 20px; border-bottom: 1px solid #e2e8f0; display: flex; align-items: center; gap: 12px">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=40&h=40&fit=crop" alt="User" style="width: 40px; height: 40px; border-radius: 20px; object-fit: cover">
+        <div style="flex: 1">
+          <div style="font-size: 16px; font-weight: 700; color: #1e293b">Jenny Wu</div>
+          <div style="font-size: 12px; color: #64748b">訂單 FT202401110006 · 已取消</div>
+        </div>
+        <button onclick="document.getElementById('chat-modal-6').style.display='none'" style="width: 32px; height: 32px; border-radius: 16px; border: none; background: #f1f5f9; color: #64748b; cursor: pointer; display: flex; align-items: center; justify-content: center">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div style="flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 16px">
+        <div style="display: flex; gap: 8px; align-items: flex-start">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=32&h=32&fit=crop" alt="User" style="width: 32px; height: 32px; border-radius: 16px; object-fit: cover; flex-shrink: 0">
+          <div style="flex: 1">
+            <div style="background: #f1f5f9; padding: 12px 16px; border-radius: 16px 16px 16px 4px; max-width: 80%">
+              <div style="font-size: 14px; color: #1e293b; line-height: 1.5">不好意思，我買錯尺寸了，可以取消訂單嗎？</div>
+            </div>
+            <div style="font-size: 11px; color: #94a3b8; margin-top: 4px; padding-left: 4px">今天 10:15</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 8px; align-items: flex-start; flex-direction: row-reverse">
+          <div style="width: 32px; height: 32px; border-radius: 16px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+            <i class="fas fa-store" style="font-size: 14px; color: white"></i>
+          </div>
+          <div style="flex: 1; display: flex; flex-direction: column; align-items: flex-end">
+            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px 16px; border-radius: 16px 16px 4px 16px; max-width: 80%">
+              <div style="font-size: 14px; line-height: 1.5">沒問題！訂單已為您取消，退款會在 3-5 個工作天內退回原付款方式。</div>
+            </div>
+            <div style="font-size: 11px; color: #94a3b8; margin-top: 4px; padding-right: 4px">今天 10:20</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 8px; align-items: flex-start">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=32&h=32&fit=crop" alt="User" style="width: 32px; height: 32px; border-radius: 16px; object-fit: cover; flex-shrink: 0">
+          <div style="flex: 1">
+            <div style="background: #f1f5f9; padding: 12px 16px; border-radius: 16px 16px 16px 4px; max-width: 80%">
+              <div style="font-size: 14px; color: #1e293b; line-height: 1.5">謝謝！我已經重新下單正確尺寸了 😊</div>
+            </div>
+            <div style="font-size: 11px; color: #94a3b8; margin-top: 4px; padding-left: 4px">今天 10:25</div>
           </div>
         </div>
       </div>

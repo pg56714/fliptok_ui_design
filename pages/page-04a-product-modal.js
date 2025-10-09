@@ -109,16 +109,10 @@ document.getElementById("page-04a").innerHTML = `
         </div>
 
         <!-- 購買按鈕 -->
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px">
-          <button class="btn" style="background: white; border: 2px solid #6366f1; color: #6366f1; font-weight: 700" onclick="alert('已加入購物車！首次購買需綁定信用卡，之後自動扣款')">
-            <i class="fas fa-shopping-bag" style="margin-right: 8px"></i>
-            加入購物車
-          </button>
-          <button class="btn btn-primary" style="font-weight: 700" onclick="alert('立即付款！')">
-            <i class="fas fa-bolt" style="margin-right: 8px"></i>
-            立即購買
-          </button>
-        </div>
+        <button class="btn btn-primary" style="font-weight: 700; width: 100%" onclick="alert('立即購買！首次購買需綁定信用卡，之後可快速結帳'); goToPage('02b')">
+          <i class="fas fa-bolt" style="margin-right: 8px"></i>
+          立即購買
+        </button>
       </div>
     </div>
   </div>

@@ -58,44 +58,44 @@ document.getElementById("page-09").innerHTML = `
       <!-- 功能快捷入口 -->
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 12px">功能快捷入口</h3>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px">
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(12)">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
-              <i class="fas fa-shopping-cart"></i>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px">
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="goToPage('02b')">
+            <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #f0fdf4; color: #16a34a">
+              <i class="fas fa-cog" style="font-size: 16px"></i>
             </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">購物車</div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">綁定信用卡</div>
           </div>
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(18)">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #e0f2fe; color: #0284c7">
-              <i class="fas fa-receipt"></i>
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="goToPage(18)">
+            <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #e0f2fe; color: #0284c7">
+              <i class="fas fa-receipt" style="font-size: 16px"></i>
             </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">我的訂單</div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">我的訂單</div>
           </div>
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage('09a')">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #dbeafe; color: #2563eb">
-              <i class="fas fa-heart"></i>
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="goToPage('09a')">
+            <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #fce7f3; color: #ec4899">
+              <i class="fas fa-heart" style="font-size: 16px"></i>
             </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">我的關注</div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">我的關注</div>
           </div>
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(13)">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #f3e8ff; color: #8b5cf6">
-              <i class="fas fa-user-friends"></i>
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="goToPage(13)">
+            <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #f3e8ff; color: #8b5cf6">
+              <i class="fas fa-user-friends" style="font-size: 16px"></i>
             </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">邀請好友</div>
-          </div>
-          
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(16)">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef2f2; color: #ef4444">
-              <i class="fas fa-store"></i>
-            </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">品牌一覽</div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">邀請好友</div>
           </div>
           
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="document.getElementById('ambassador-modal').style.display='flex'">
-            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
-              <i class="fas fa-crown"></i>
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="goToPage(16)">
+            <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #fef2f2; color: #ef4444">
+              <i class="fas fa-store" style="font-size: 16px"></i>
             </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155">大使功能</div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">品牌一覽</div>
+          </div>
+          
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="document.getElementById('ambassador-modal').style.display='flex'">
+            <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
+              <i class="fas fa-crown" style="font-size: 16px"></i>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">大使功能</div>
           </div>
         </div>
       </div>
