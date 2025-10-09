@@ -43,6 +43,11 @@ document.getElementById("brand-01").innerHTML = `
           <span style="font-size: 13px">訂單管理</span>
           <span class="badge" style="background: #fef3c7; color: #78350f; font-size: 10px">8</span>
         </button>
+        <button class="btn" style="background: white; border: 1.5px solid #f5576c; color: #f5576c; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 8px" onclick="goToPage(10)">
+          <i class="fas fa-star" style="font-size: 24px"></i>
+          <span style="font-size: 13px">產品評價</span>
+          <span class="badge" style="background: #fef3c7; color: #78350f; font-size: 10px">2.3k</span>
+        </button>
         <button class="btn" style="background: white; border: 1.5px solid #f5576c; color: #f5576c; padding: 16px; display: flex; flex-direction: column; align-items: center; gap: 8px" onclick="goToPage(4)">
           <i class="fas fa-users" style="font-size: 24px"></i>
           <span style="font-size: 13px">大使列表</span>

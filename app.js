@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     if (document.getElementById("brand-01")) {
       pagePrefix = "brand";
-      pageCount = 9; // 品牌後台共 9 頁
+      pageCount = 10; // 品牌後台共 10 頁
     } else if (document.getElementById("admin-01")) {
       pagePrefix = "admin";
       pageCount = 6; // 管理後台共 6 頁
