@@ -78,6 +78,13 @@ document.getElementById("page-09").innerHTML = `
             <div style="font-size: 12px; font-weight: 700; color: #334155">邀請好友</div>
           </div>
           
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(16)">
+            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef2f2; color: #ef4444">
+              <i class="fas fa-store"></i>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155">品牌一覽</div>
+          </div>
+          
           <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="document.getElementById('ambassador-modal').style.display='flex'">
             <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #fef3c7; color: #f59e0b">
               <i class="fas fa-crown"></i>

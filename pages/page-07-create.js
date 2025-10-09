@@ -90,9 +90,6 @@ document.getElementById("page-07").innerHTML = `
               <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=200&h=120&fit=crop" alt="My Video" onerror="this.onerror=null;this.src='data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs='">
               <div style="position: absolute; top: 8px; right: 8px; background: rgba(0,0,0,0.6); color: white; padding: 2px 6px; border-radius: 4px; font-size: 10px">3.1k</div>
             </div>
-            <div class="video-item" style="height: 120px; background: #f1f5f9; display: flex; align-items: center; justify-content: center; cursor: pointer" onclick="alert('新增創作')">
-              <i class="fas fa-plus" style="font-size: 24px; color: #94a3b8"></i>
-            </div>
           </div>
         </div>
       </div>
