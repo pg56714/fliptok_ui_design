@@ -65,6 +65,12 @@ document.getElementById("page-09").innerHTML = `
             </div>
             <div style="font-size: 12px; font-weight: 700; color: #334155">購物車</div>
           </div>
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage(18)">
+            <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #e0f2fe; color: #0284c7">
+              <i class="fas fa-receipt"></i>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155">我的訂單</div>
+          </div>
           <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 14px; text-align: center; cursor: pointer" onclick="goToPage('09a')">
             <div style="width: 40px; height: 40px; margin: 0 auto 8px; border-radius: 12px; display: flex; align-items: center; justify-content: center; background: #dbeafe; color: #2563eb">
               <i class="fas fa-heart"></i>

@@ -2,11 +2,11 @@ window.addEventListener("DOMContentLoaded", () => {
   try {
     // 檢測當前是哪個系統（用戶端、品牌端或管理端）
     let pagePrefix = "page";
-    let pageCount = 17;
+    let pageCount = 18;
 
     if (document.getElementById("brand-01")) {
       pagePrefix = "brand";
-      pageCount = 8; // 品牌後台共 8 頁
+      pageCount = 9; // 品牌後台共 9 頁
     } else if (document.getElementById("admin-01")) {
       pagePrefix = "admin";
       pageCount = 6; // 管理後台共 6 頁
