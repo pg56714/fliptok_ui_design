@@ -19,7 +19,7 @@ document.getElementById("page-06").innerHTML = `
     <div style="padding: 16px">
       <!-- 搜尋欄 -->
       <div style="position: relative; margin-bottom: 20px">
-        <input type="text" class="form-input" placeholder="搜尋用戶、品牌或內容..." style="padding-left: 44px; background: #f8fafc">
+        <input type="text" class="form-input" placeholder="搜尋用戶" style="padding-left: 44px; background: #f8fafc">
         <i class="fas fa-search" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: #94a3b8"></i>
       </div>
 
