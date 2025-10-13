@@ -77,12 +77,6 @@ document.getElementById("page-09").innerHTML = `
             </div>
             <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">我的關注</div>
           </div>
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="goToPage(13)">
-            <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #f3e8ff; color: #8b5cf6">
-              <i class="fas fa-user-friends" style="font-size: 16px"></i>
-            </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">邀請好友</div>
-          </div>
           
           <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="goToPage(16)">
             <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #fef2f2; color: #ef4444">
@@ -162,21 +156,6 @@ document.getElementById("page-09").innerHTML = `
                 <div style="font-size: 12px; color: #64748b">查看收益與獎勵</div>
               </div>
               <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
-            </div>
-
-            <!-- 粉絲影響購買通知 -->
-            <div style="display: flex; align-items: center; gap: 16px; padding: 16px; background: #f8fafc; border-radius: 16px; cursor: pointer; transition: all 0.3s" 
-              onmouseover="this.style.background='#f1f5f9'" 
-              onmouseout="this.style.background='#f8fafc'"
-              onclick="event.stopPropagation()">
-              <div style="width: 48px; height: 48px; background: #fef3c7; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
-                <i class="fas fa-bell" style="font-size: 20px; color: #f59e0b"></i>
-              </div>
-              <div style="flex: 1">
-                <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">粉絲影響購買通知</div>
-                <div style="font-size: 12px; color: #64748b">當粉絲影響購買時，系統會悄悄通知大使</div>
-              </div>
-              <input type="checkbox" aria-label="粉絲影響購買通知切換" checked onchange="console.log('粉絲影響購買通知', this.checked)" style="width: 18px; height: 18px; accent-color: #6366f1; cursor: pointer; flex-shrink: 0">
             </div>
           </div>
 
@@ -293,7 +272,7 @@ document.getElementById("page-09").innerHTML = `
     </div>
     <div class="tab-item" onclick="goToPage(6)">
       <i class="fas fa-compass tab-icon"></i>
-      <span class="tab-label">探索</span>
+      <span class="tab-label">搜尋</span>
     </div>
     <div class="tab-item" onclick="goToPage(7)">
       <i class="fas fa-plus-circle tab-icon"></i>

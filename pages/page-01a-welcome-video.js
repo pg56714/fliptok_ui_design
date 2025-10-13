@@ -27,7 +27,7 @@ document.getElementById("page-01a").innerHTML = `
         <div style="color: white">
           <h2 style="font-size: 24px; font-weight: 800; margin-bottom: 8px">🎉 歡迎加入 FlipTok！</h2>
           <p style="font-size: 14px; opacity: 0.9; line-height: 1.6">
-            一起探索你喜愛的品牌，創作精彩內容<br>成為品牌大使，開啟賺錢之旅
+            一起搜尋你喜愛的品牌，創作精彩內容<br>成為品牌大使，開啟賺錢之旅
           </p>
         </div>
       </div>

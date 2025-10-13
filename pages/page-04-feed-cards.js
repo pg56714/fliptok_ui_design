@@ -105,7 +105,7 @@ document.getElementById("page-04").innerHTML = `
     </div>
     <div class="tab-item">
       <i class="fas fa-compass tab-icon"></i>
-      <span class="tab-label">探索</span>
+      <span class="tab-label">搜尋</span>
     </div>
     <div class="tab-item">
       <i class="fas fa-plus-circle tab-icon"></i>

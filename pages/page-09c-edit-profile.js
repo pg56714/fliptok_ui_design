@@ -161,7 +161,6 @@ document.getElementById("page-09c").innerHTML = `
       <!-- 商品送達地址 -->
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 6px">商品送達地址</h3>
-        <div style="font-size: 12px; color: #64748b; margin-bottom: 16px">用於收貨與配送通知</div>
 
         <!-- 收件人與手機 -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px">
@@ -366,7 +365,7 @@ document.getElementById("page-09c").innerHTML = `
     </div>
     <div class="tab-item" onclick="goToPage(6)">
       <i class="fas fa-compass tab-icon"></i>
-      <span class="tab-label">探索</span>
+      <span class="tab-label">搜尋</span>
     </div>
     <div class="tab-item" onclick="goToPage(7)">
       <i class="fas fa-plus-circle tab-icon"></i>

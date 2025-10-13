@@ -1,4 +1,4 @@
-// 頁面 06: 探索頁面
+// 頁面 06: 搜尋頁面
 document.getElementById("page-06").innerHTML = `
 <div class="phone-container">
   <div class="status-bar">
@@ -12,7 +12,7 @@ document.getElementById("page-06").innerHTML = `
 
   <div class="page-content">
     <div class="header-bar">
-      <div class="header-title">探索</div>
+      <div class="header-title">搜尋</div>
       <div class="header-subtitle">發現更多精彩內容</div>
     </div>
 
@@ -110,7 +110,7 @@ document.getElementById("page-06").innerHTML = `
     </div>
     <div class="tab-item active">
       <i class="fas fa-compass tab-icon"></i>
-      <span class="tab-label">探索</span>
+      <span class="tab-label">搜尋</span>
     </div>
     <div class="tab-item">
       <i class="fas fa-plus-circle tab-icon"></i>

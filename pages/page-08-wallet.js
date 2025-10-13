@@ -95,17 +95,6 @@ document.getElementById("page-08").innerHTML = `
               <div style="color: #10b981; font-size: 16px; font-weight: 700; margin-top: 4px">+NT$ 680</div>
             </div>
           </div>
-
-          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px">
-            <div class="list-icon" style="background: #f3e8ff; color: #8b5cf6; flex-shrink: 0">
-              <i class="fas fa-users"></i>
-            </div>
-            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
-              <div class="list-title">邀請獎勵</div>
-              <div class="list-subtitle">成功邀請好友加入</div>
-              <div style="color: #10b981; font-size: 16px; font-weight: 700; margin-top: 4px">+NT$ 600</div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -157,7 +146,7 @@ document.getElementById("page-08").innerHTML = `
     </div>
     <div class="tab-item" onclick="goToPage(6)">
       <i class="fas fa-compass tab-icon"></i>
-      <span class="tab-label">探索</span>
+      <span class="tab-label">搜尋</span>
     </div>
     <div class="tab-item" onclick="goToPage(7)">
       <i class="fas fa-plus-circle tab-icon"></i>
