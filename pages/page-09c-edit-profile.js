@@ -158,6 +158,103 @@ document.getElementById("page-09c").innerHTML = `
         </div>
       </div>
 
+      <!-- 商品送達地址 -->
+      <div class="card" style="margin-bottom: 20px">
+        <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 6px">商品送達地址</h3>
+        <div style="font-size: 12px; color: #64748b; margin-bottom: 16px">用於收貨與配送通知</div>
+
+        <!-- 收件人與手機 -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px">
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">收件人</label>
+            <input 
+              id="input-ship-name"
+              type="text" 
+              placeholder="例如：陳小美" 
+              style="width: 100%; padding: 12px 16px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; font-size: 15px; color: #1e293b; outline: none; transition: all 0.3s"
+              onfocus="this.style.borderColor='#6366f1'; this.style.background='white'; this.style.boxShadow='0 0 0 3px rgba(99,102,241,0.1)'"
+              onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none'"
+            >
+          </div>
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">手機號碼</label>
+            <input 
+              id="input-ship-phone"
+              type="tel" 
+              placeholder="例如：0912 345 678" 
+              style="width: 100%; padding: 12px 16px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; font-size: 15px; color: #1e293b; outline: none; transition: all 0.3s"
+              onfocus="this.style.borderColor='#6366f1'; this.style.background='white'; this.style.boxShadow='0 0 0 3px rgba(99,102,241,0.1)'"
+              onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none'"
+            >
+          </div>
+        </div>
+
+        <!-- 地址 -->
+        <div style="margin-bottom: 12px">
+          <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">地址</label>
+          <input 
+            id="input-ship-address"
+            type="text" 
+            placeholder="路名、門牌號、樓層或房號" 
+            style="width: 100%; padding: 12px 16px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; font-size: 15px; color: #1e293b; outline: none; transition: all 0.3s"
+            onfocus="this.style.borderColor='#6366f1'; this.style.background='white'; this.style.boxShadow='0 0 0 3px rgba(99,102,241,0.1)'"
+            onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none'"
+          >
+        </div>
+
+        <!-- 城市 / 區 / 郵遞區號 / 國家 -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px">
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">城市</label>
+            <input 
+              id="input-ship-city"
+              type="text" 
+              placeholder="台北市" 
+              style="width: 100%; padding: 12px 16px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; font-size: 15px; color: #1e293b; outline: none; transition: all 0.3s"
+              onfocus="this.style.borderColor='#6366f1'; this.style.background='white'; this.style.boxShadow='0 0 0 3px rgba(99,102,241,0.1)'"
+              onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none'"
+            >
+          </div>
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">區/縣市</label>
+            <input 
+              id="input-ship-district"
+              type="text" 
+              placeholder="信義區" 
+              style="width: 100%; padding: 12px 16px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; font-size: 15px; color: #1e293b; outline: none; transition: all 0.3s"
+              onfocus="this.style.borderColor='#6366f1'; this.style.background='white'; this.style.boxShadow='0 0 0 3px rgba(99,102,241,0.1)'"
+              onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none'"
+            >
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-items: end">
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">郵遞區號</label>
+            <input 
+              id="input-ship-zip"
+              type="text" 
+              placeholder="110" 
+              style="width: 100%; padding: 12px 16px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; font-size: 15px; color: #1e293b; outline: none; transition: all 0.3s"
+              onfocus="this.style.borderColor='#6366f1'; this.style.background='white'; this.style.boxShadow='0 0 0 3px rgba(99,102,241,0.1)'"
+              onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none'"
+            >
+          </div>
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">國家/地區</label>
+            <input 
+              id="input-ship-country"
+              type="text" 
+              placeholder="台灣" 
+              style="width: 100%; padding: 12px 16px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; font-size: 15px; color: #1e293b; outline: none; transition: all 0.3s"
+              onfocus="this.style.borderColor='#6366f1'; this.style.background='white'; this.style.boxShadow='0 0 0 3px rgba(99,102,241,0.1)'"
+              onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none'"
+            >
+          </div>
+        </div>
+
+      </div>
+
       <!-- 安全設定 -->
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">安全設定</h3>
@@ -328,6 +425,13 @@ function saveProfile() {
   const bio = document.getElementById('input-bio').value;
   const email = document.getElementById('input-email').value;
   const phone = document.getElementById('input-phone').value;
+  const shipName = document.getElementById('input-ship-name')?.value || '';
+  const shipPhone = document.getElementById('input-ship-phone')?.value || '';
+  const shipAddress = document.getElementById('input-ship-address')?.value || '';
+  const shipCity = document.getElementById('input-ship-city')?.value || '';
+  const shipDistrict = document.getElementById('input-ship-district')?.value || '';
+  const shipZip = document.getElementById('input-ship-zip')?.value || '';
+  const shipCountry = document.getElementById('input-ship-country')?.value || '';
   
   if (!name || !username || !email) {
     alert('請填寫必要欄位');
@@ -335,7 +439,12 @@ function saveProfile() {
   }
   
   // 這裡應該呼叫 API 儲存資料
-  console.log('儲存資料：', { name, username, bio, email, phone });
+  console.log('儲存資料：', { 
+    name, username, bio, email, phone,
+    shippingAddress: {
+      shipName, shipPhone, shipAddress, shipCity, shipDistrict, shipZip, shipCountry
+    }
+  });
   
   // 顯示成功訊息
   showToast('個人資料已儲存');

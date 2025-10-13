@@ -97,6 +97,14 @@ document.getElementById("page-09").innerHTML = `
             </div>
             <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">大使功能</div>
           </div>
+
+          <!-- 偏好設定：最愛品牌 / 興趣 -->
+          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="document.getElementById('preferences-modal').style.display='flex'">
+            <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #ecfeff; color: #06b6d4">
+              <i class="fas fa-sliders-h" style="font-size: 16px"></i>
+            </div>
+            <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">偏好設定</div>
+          </div>
         </div>
       </div>
 
@@ -176,6 +184,59 @@ document.getElementById("page-09").innerHTML = `
           <button 
             style="width: 100%; padding: 14px; background: #f1f5f9; border: none; border-radius: 12px; color: #64748b; font-size: 15px; font-weight: 600; cursor: pointer"
             onclick="document.getElementById('ambassador-modal').style.display='none'"
+          >
+            取消
+          </button>
+        </div>
+      </div>
+
+      <!-- 偏好設定模態框：讓使用者重新選擇最愛品牌與興趣 -->
+      <div id="preferences-modal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 9999; align-items: center; justify-content: center" onclick="if(event.target === this) this.style.display='none'">
+        <div style="background: white; border-radius: 24px; padding: 32px 24px; margin: 20px; max-width: 360px; width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.3)" onclick="event.stopPropagation()">
+          <!-- 標題 -->
+          <div style="text-align: center; margin-bottom: 24px">
+            <div style="width: 64px; height: 64px; margin: 0 auto 16px; background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%); border-radius: 20px; display: flex; align-items: center; justify-content: center">
+              <i class="fas fa-sliders-h" style="font-size: 28px; color: white"></i>
+            </div>
+            <h3 style="font-size: 22px; font-weight: 800; color: #1e293b; margin-bottom: 8px">偏好設定</h3>
+            <p style="font-size: 14px; color: #64748b">調整你的最愛品牌與興趣</p>
+          </div>
+
+          <!-- 功能選項 -->
+          <div style="display: grid; gap: 12px; margin-bottom: 24px">
+            <div style="display: flex; align-items: center; gap: 16px; padding: 16px; background: #f8fafc; border-radius: 16px; cursor: pointer; transition: all 0.3s"
+              onmouseover="this.style.background='#f1f5f9'; this.style.transform='translateX(4px)'"
+              onmouseout="this.style.background='#f8fafc'; this.style.transform='translateX(0)'"
+              onclick="document.getElementById('preferences-modal').style.display='none'; goToPage(2)">
+              <div style="width: 48px; height: 48px; background: #fff7ed; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+                <i class="fas fa-star" style="font-size: 20px; color: #f59e0b"></i>
+              </div>
+              <div style="flex: 1">
+                <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">選擇你最愛的品牌</div>
+                <div style="font-size: 12px; color: #64748b">回到初次設定重新挑選品牌</div>
+              </div>
+              <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 16px; padding: 16px; background: #f8fafc; border-radius: 16px; cursor: pointer; transition: all 0.3s"
+              onmouseover="this.style.background='#f1f5f9'; this.style.transform='translateX(4px)'"
+              onmouseout="this.style.background='#f8fafc'; this.style.transform='translateX(0)'"
+              onclick="document.getElementById('preferences-modal').style.display='none'; goToPage(3)">
+              <div style="width: 48px; height: 48px; background: #eff6ff; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0">
+                <i class="fas fa-tags" style="font-size: 20px; color: #3b82f6"></i>
+              </div>
+              <div style="flex: 1">
+                <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">選擇你的興趣</div>
+                <div style="font-size: 12px; color: #64748b">重新勾選你感興趣的主題</div>
+              </div>
+              <i class="fas fa-chevron-right" style="color: #94a3b8"></i>
+            </div>
+          </div>
+
+          <!-- 取消按鈕 -->
+          <button 
+            style="width: 100%; padding: 14px; background: #f1f5f9; border: none; border-radius: 12px; color: #64748b; font-size: 15px; font-weight: 600; cursor: pointer"
+            onclick="document.getElementById('preferences-modal').style.display='none'"
           >
             取消
           </button>
