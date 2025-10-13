@@ -319,6 +319,7 @@ document.getElementById("page-09c").innerHTML = `
           </div>
 
           <!-- 密碼要求提示 -->
+          <!-- 
           <div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 12px; margin-bottom: 20px">
             <div style="font-size: 12px; color: #166534; line-height: 1.6">
               <div style="font-weight: 600; margin-bottom: 6px">密碼要求：</div>
@@ -327,7 +328,8 @@ document.getElementById("page-09c").innerHTML = `
               <div>• 至少一個數字</div>
             </div>
           </div>
-
+          -->
+          
           <!-- 按鈕 -->
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px">
             <button onclick="document.getElementById('password-modal').style.display='none'" style="padding: 14px; background: #f1f5f9; color: #64748b; border: none; border-radius: 12px; font-size: 15px; font-weight: 600; cursor: pointer">
