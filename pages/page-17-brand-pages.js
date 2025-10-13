@@ -158,16 +158,6 @@ document.getElementById("page-17").innerHTML = `
             <div style="font-size: 13px; color: #64748b">NT$ 500 - NT$ 5,000</div>
           </div>
         </div>
-
-        <button class="btn btn-primary" style="margin-top: 16px">
-          <i class="fas fa-plus" style="margin-right: 8px"></i>
-          申請成為大使
-        </button>
-      </div>
-
-      <div class="card" style="margin-top: 12px; background:#fff1f2; border:1px solid #fecdd3">
-        <h3 style="font-size: 14px; font-weight: 700; color:#9f1239; margin-bottom:8px">離開品牌</h3>
-        <button class="btn btn-danger" style="width:100%" onclick="(function(){ if(confirm('確定要退出品牌嗎？（示意）')){ alert('已退出品牌（示意）'); goToPage(14);} })()">退出品牌</button>
       </div>
     </div>
   </div>

@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   try {
     // 檢測當前是哪個系統（用戶端、品牌端或管理端）
     let pagePrefix = "page";
-    let pageCount = 18;
+    let pageCount = 17;
 
     if (document.getElementById("brand-01")) {
       pagePrefix = "brand";
@@ -16,8 +16,8 @@ window.addEventListener("DOMContentLoaded", () => {
       { length: pageCount },
       (_, i) => `${pagePrefix}-${String(i + 1).padStart(2, "0")}`
     ).filter((id) => {
-      // 排除已刪除的頁面（購物車功能已移除）
-      return id !== "page-12" && id !== "page-13";
+      // 排除已刪除的頁面
+      return id !== "page-12" && id !== "page-13" && id !== "page-16";
     });
     const missing = ids.filter((id) => {
       const el = document.getElementById(id);

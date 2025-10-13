@@ -22,7 +22,7 @@ document.getElementById("page-04a").innerHTML = `
       <div style="position: relative; width: 100%; aspect-ratio: 1; background: #f8fafc; overflow: hidden">
         <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&h=600&fit=crop" alt="Product" style="width: 100%; height: 100%; object-fit: cover">
         <!-- 品牌標誌（可點擊） -->
-        <div style="position: absolute; top: 20px; left: 20px; background: white; padding: 8px 16px; border-radius: 20px; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer" onclick="alert('前往品牌主頁'); goToPage(16)">
+        <div style="position: absolute; top: 20px; left: 20px; background: white; padding: 8px 16px; border-radius: 20px; display: flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); cursor: pointer" onclick="alert('前往品牌主頁'); goToPage(17)">
           <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=40&h=40&fit=crop" alt="Brand" style="width: 32px; height: 32px; border-radius: 8px; object-fit: cover">
           <span style="font-size: 14px; font-weight: 700; color: #1e293b">時尚潮牌 A</span>
           <i class="fas fa-arrow-right" style="font-size: 12px; color: #64748b"></i>

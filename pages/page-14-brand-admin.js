@@ -47,9 +47,6 @@ document.getElementById("page-14").innerHTML = `
             </div>
           </div>
         </div>
-        <button class="btn btn-primary" onclick="goToPage(16)">
-          <i class="fas fa-plus" style="margin-right:8px"></i>加入更多品牌
-        </button>
       </div>
     </div>
   </div>

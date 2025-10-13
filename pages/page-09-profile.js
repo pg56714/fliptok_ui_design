@@ -78,13 +78,6 @@ document.getElementById("page-09").innerHTML = `
             <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">我的關注</div>
           </div>
           
-          <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="goToPage(16)">
-            <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #fef2f2; color: #ef4444">
-              <i class="fas fa-store" style="font-size: 16px"></i>
-            </div>
-            <div style="font-size: 12px; font-weight: 700; color: #334155; line-height: 1.3">品牌一覽</div>
-          </div>
-          
           <!-- 偏好設定：最愛品牌 / 興趣 -->
           <div style="background: #ffffff; border: 1px solid #f1f5f9; border-radius: 12px; padding: 10px; text-align: center; cursor: pointer" onclick="document.getElementById('preferences-modal').style.display='flex'">
             <div style="width: 36px; height: 36px; margin: 0 auto 6px; border-radius: 10px; display: flex; align-items: center; justify-content: center; background: #ecfeff; color: #06b6d4">
