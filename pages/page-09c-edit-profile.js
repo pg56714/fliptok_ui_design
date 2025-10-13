@@ -111,18 +111,6 @@ document.getElementById("page-09c").innerHTML = `
             >
           </div>
         </div>
-
-        <!-- 個人簡介 -->
-        <div style="margin-bottom: 0">
-          <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">個人簡介</label>
-          <textarea 
-            id="input-bio"
-            placeholder="介紹一下自己..." 
-            style="width: 100%; padding: 12px 16px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; font-size: 15px; color: #1e293b; outline: none; transition: all 0.3s; resize: vertical; min-height: 80px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
-            onfocus="this.style.borderColor='#6366f1'; this.style.background='white'; this.style.boxShadow='0 0 0 3px rgba(99,102,241,0.1)'"
-            onblur="this.style.borderColor='#e2e8f0'; this.style.background='#f8fafc'; this.style.boxShadow='none'"
-          >時尚愛好者 💄 | 分享穿搭靈感 ✨</textarea>
-        </div>
       </div>
 
       <!-- 聯絡資訊 -->
