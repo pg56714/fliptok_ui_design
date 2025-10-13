@@ -41,7 +41,7 @@ document.getElementById("page-07a").innerHTML = `
           00:15
         </div>
         <div style="color: white; font-size: 13px; margin-top: 8px; text-shadow: 0 2px 8px rgba(0,0,0,0.5)">
-          剩餘時間：00:45 <i class="fas fa-info-circle" style="margin-left: 4px; cursor: pointer" onclick="alert('大使影片最長可錄製 60 秒')"></i>
+          剩餘時間：01:15 <i class="fas fa-info-circle" style="margin-left: 4px; cursor: pointer" onclick="alert('大使影片最長可錄製 90 秒')"></i>
         </div>
       </div>
 
@@ -119,7 +119,7 @@ document.getElementById("page-07a").innerHTML = `
       <div style="text-align: center; margin-top: 20px">
         <div style="background: rgba(245,158,11,0.9); color: white; padding: 8px 16px; border-radius: 20px; font-size: 12px; display: inline-block">
           <i class="fas fa-clock" style="margin-right: 6px"></i>
-          大使影片限制：60 秒
+          大使影片限制：90 秒
         </div>
       </div>
     </div>

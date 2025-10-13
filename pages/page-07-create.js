@@ -53,7 +53,7 @@ document.getElementById("page-07").innerHTML = `
               <i class="fas fa-camera" style="font-size: 24px; color: white"></i>
             </div>
             <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 4px">拍攝影片</h3>
-            <p style="font-size: 13px; color: #64748b">錄製新的短影片（限 60 秒）</p>
+            <p style="font-size: 13px; color: #64748b">錄製新的短影片（限 90 秒）</p>
           </div>
 
           <div style="background: white; border-radius: 16px; padding: 24px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.08); cursor: pointer" onclick="alert('選擇相簿')">
@@ -61,7 +61,7 @@ document.getElementById("page-07").innerHTML = `
               <i class="fas fa-images" style="font-size: 24px; color: white"></i>
             </div>
             <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 4px">從相簿選擇</h3>
-            <p style="font-size: 13px; color: #64748b">使用現有的照片或影片（限 60 秒）</p>
+            <p style="font-size: 13px; color: #64748b">使用現有的照片或影片（限 90 秒）</p>
           </div>
         </div>
 
