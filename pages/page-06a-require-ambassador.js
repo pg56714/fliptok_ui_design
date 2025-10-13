@@ -93,7 +93,7 @@ document.getElementById("page-06a").innerHTML = `
       <button 
         class="btn btn-primary" 
         style="width: 100%; background: white; color: #f59e0b; font-size: 18px; font-weight: 800; padding: 18px; margin-bottom: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.2)"
-        onclick="goToPage(6)"
+        onclick="goToPage(4)"
       >
         <i class="fas fa-shopping-bag" style="margin-right: 8px"></i>
         前往購物解鎖大使
