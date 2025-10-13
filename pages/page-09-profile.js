@@ -33,7 +33,7 @@ document.getElementById("page-09").innerHTML = `
             <div style="display: flex; gap: 8px">
               <span class="badge badge-primary">
                 <i class="fas fa-crown" style="font-size: 10px"></i>
-                大使 · 時尚潮牌 A
+                大使
               </span>
             </div>
           </div>

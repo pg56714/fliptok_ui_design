@@ -44,7 +44,7 @@ document.getElementById("page-06").innerHTML = `
             <div style="flex: 1">
               <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">@emily_fashion</div>
               <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">時尚穿搭達人 • 12.5k 粉絲</div>
-              <div style="font-size: 12px; color: #6366f1; font-weight: 600">大使 · 時尚潮牌 A</div>
+              <div style="font-size: 12px; color: #6366f1; font-weight: 600">大使</div>
             </div>
             <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; flex-shrink: 0">關注</button>
           </div>
@@ -54,7 +54,7 @@ document.getElementById("page-06").innerHTML = `
             <div style="flex: 1">
               <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">@sarah_beauty</div>
               <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">美妝達人 • 8.2k 粉絲</div>
-              <div style="font-size: 12px; color: #6366f1; font-weight: 600">大使 · 精品美妝 B</div>
+              <div style="font-size: 12px; color: #6366f1; font-weight: 600">大使</div>
             </div>
             <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; flex-shrink: 0">關注</button>
           </div>
@@ -64,7 +64,7 @@ document.getElementById("page-06").innerHTML = `
             <div style="flex: 1">
               <div style="font-size: 15px; font-weight: 700; color: #1e293b; margin-bottom: 2px">@alex_lifestyle</div>
               <div style="font-size: 13px; color: #64748b; margin-bottom: 4px">生活達人 • 15.3k 粉絲</div>
-              <div style="font-size: 12px; color: #6366f1; font-weight: 600">大使 · 生活居家 C</div>
+              <div style="font-size: 12px; color: #6366f1; font-weight: 600">大使</div>
             </div>
             <button style="background: #6366f1; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; cursor: pointer; flex-shrink: 0">關注</button>
           </div>
