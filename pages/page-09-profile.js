@@ -221,17 +221,6 @@ document.getElementById("page-09").innerHTML = `
       <div class="card" style="margin-bottom: 20px">
         <h3 style="font-size: 16px; font-weight: 700; color: #1e293b; margin-bottom: 16px">設定</h3>
         <div style="display: grid; gap: 12px">
-          <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px; cursor: pointer" onclick="goToPage('09b')">
-            <div class="list-icon" style="background: #fce7f3; color: #ec4899; flex-shrink: 0">
-              <i class="fas fa-clipboard-list"></i>
-            </div>
-            <div style="flex: 1; display: flex; flex-direction: column; gap: 4px">
-              <div class="list-title">用戶調查</div>
-              <div class="list-subtitle">分享你的使用體驗</div>
-            </div>
-            <i class="fas fa-chevron-right" style="color: #94a3b8; flex-shrink: 0"></i>
-          </div>
-
           <div style="display: flex; align-items: center; gap: 12px; background: #f8fafc; border-radius: 12px; padding: 16px; cursor: pointer" onclick="alert('語言設定')">
             <div class="list-icon" style="background: #f0fdf4; color: #16a34a; flex-shrink: 0">
               <i class="fas fa-language"></i>

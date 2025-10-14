@@ -41,7 +41,7 @@ document.getElementById("page-02b").innerHTML = `
         <!-- 持卡人姓名 -->
         <div style="margin-bottom: 20px">
           <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">持卡人姓名</label>
-          <input id="card-holder" type="text" class="form-input" placeholder="WANG DA MING" oninput="if(document.getElementById('same-as-billing')?.checked){ document.getElementById('ship-name') && (document.getElementById('ship-name').value = this.value) }">
+          <input id="card-holder" type="text" class="form-input" placeholder="WANG DA MING">
         </div>
 
         <!-- 有效期限與 CVV -->
@@ -61,6 +61,17 @@ document.getElementById("page-02b").innerHTML = `
         <div style="margin-bottom: 12px">
           <div style="font-size: 14px; font-weight: 700; color: #1e293b">帳單地址</div>
           <div style="font-size: 12px; color: #94a3b8">請輸入與發卡行留存一致的地址</div>
+        </div>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px">
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">收件人</label>
+            <input id="bill-name" type="text" class="form-input" placeholder="例如：陳小美" oninput="if(document.getElementById('same-as-billing')?.checked){ var t=document.getElementById('ship-name'); if(t){ t.value=this.value; } }">
+          </div>
+          <div>
+            <label style="display: block; font-size: 13px; font-weight: 600; color: #64748b; margin-bottom: 8px">手機號碼</label>
+            <input id="bill-phone" type="tel" class="form-input" placeholder="例如：0912 345 678" oninput="if(document.getElementById('same-as-billing')?.checked){ var t=document.getElementById('ship-phone'); if(t){ t.value=this.value; } }">
+          </div>
         </div>
         
         <div style="margin-bottom: 14px">
@@ -93,7 +104,7 @@ document.getElementById("page-02b").innerHTML = `
         <!-- 送達地址選項 -->
         <div style="margin-top: 16px; display: flex; align-items: center; gap: 10px">
           <input id="same-as-billing" type="checkbox" checked style="width: 18px; height: 18px; accent-color: #6366f1; cursor: pointer"
-            onchange="const s = document.getElementById('shipping-section'); if(s){ s.style.display = this.checked ? 'none' : 'block'; } if(this.checked){ ['address','city','district','zip','country'].forEach(function(k){ var b=document.getElementById('bill-'+k); var t=document.getElementById('ship-'+k); if(b&&t){ t.value=b.value; } }); var holder=document.getElementById('card-holder'); var sn=document.getElementById('ship-name'); if(holder&&sn){ sn.value=holder.value; } }">
+            onchange="const s = document.getElementById('shipping-section'); if(s){ s.style.display = this.checked ? 'none' : 'block'; } if(this.checked){ ['name','phone','address','city','district','zip','country'].forEach(function(k){ var b=document.getElementById('bill-'+k); var t=document.getElementById('ship-'+k); if(b&&t){ t.value=b.value; } }); }">
           <label for="same-as-billing" style="font-size: 13px; color: #475569">商品送達地址與帳單地址相同</label>
         </div>
 
@@ -165,7 +176,7 @@ document.getElementById("page-02b").innerHTML = `
       </div>
 
       <!-- 確認綁定按鈕 -->
-      <button class="btn btn-primary" onclick="(function(){ try { var same=document.getElementById('same-as-billing')?.checked; var payload={ card:{ number:document.getElementById('card-number')?.value, holder:document.getElementById('card-holder')?.value, expiry:document.getElementById('card-expiry')?.value, cvv:document.getElementById('card-cvv')?.value }, billing:{ address:document.getElementById('bill-address')?.value, city:document.getElementById('bill-city')?.value, district:document.getElementById('bill-district')?.value, zip:document.getElementById('bill-zip')?.value, country:document.getElementById('bill-country')?.value }, shipping:same?{ name:document.getElementById('card-holder')?.value, phone:'', address:document.getElementById('bill-address')?.value, city:document.getElementById('bill-city')?.value, district:document.getElementById('bill-district')?.value, zip:document.getElementById('bill-zip')?.value, country:document.getElementById('bill-country')?.value }:{ name:document.getElementById('ship-name')?.value, phone:document.getElementById('ship-phone')?.value, address:document.getElementById('ship-address')?.value, city:document.getElementById('ship-city')?.value, district:document.getElementById('ship-district')?.value, zip:document.getElementById('ship-zip')?.value, country:document.getElementById('ship-country')?.value } }; console.log('綁定付款方式資料：', payload); alert('信用卡綁定成功！'); } catch(e) { console.error(e); } })(); goToPage(4)">
+      <button class="btn btn-primary" onclick="(function(){ try { var same=document.getElementById('same-as-billing')?.checked; var payload={ card:{ number:document.getElementById('card-number')?.value, holder:document.getElementById('card-holder')?.value, expiry:document.getElementById('card-expiry')?.value, cvv:document.getElementById('card-cvv')?.value }, billing:{ name:document.getElementById('bill-name')?.value, phone:document.getElementById('bill-phone')?.value, address:document.getElementById('bill-address')?.value, city:document.getElementById('bill-city')?.value, district:document.getElementById('bill-district')?.value, zip:document.getElementById('bill-zip')?.value, country:document.getElementById('bill-country')?.value }, shipping:same?{ name:document.getElementById('bill-name')?.value, phone:document.getElementById('bill-phone')?.value, address:document.getElementById('bill-address')?.value, city:document.getElementById('bill-city')?.value, district:document.getElementById('bill-district')?.value, zip:document.getElementById('bill-zip')?.value, country:document.getElementById('bill-country')?.value }:{ name:document.getElementById('ship-name')?.value, phone:document.getElementById('ship-phone')?.value, address:document.getElementById('ship-address')?.value, city:document.getElementById('ship-city')?.value, district:document.getElementById('ship-district')?.value, zip:document.getElementById('ship-zip')?.value, country:document.getElementById('ship-country')?.value } }; console.log('綁定付款方式資料：', payload); alert('信用卡綁定成功！'); } catch(e) { console.error(e); } })(); goToPage(4)">
         <i class="fas fa-check" style="margin-right: 8px"></i>
         確認綁定
       </button>
